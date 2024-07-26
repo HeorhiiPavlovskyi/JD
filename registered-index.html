@@ -1,0 +1,942 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>JobDescription</title>
+    <link rel="icon" type="image/x-icon" href="img/">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/node-waves/0.7.6/waves.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/node-waves/0.7.6/waves.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css">
+
+
+</head>
+<body>
+<!-- First screen start -->
+<section class="main-section">
+  <div class="main-section_wrapper">
+    <div class="container">
+
+
+      <!-- Nav Start -->
+
+
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand order-1" href="#">
+          <img src="img/logo.svg" alt="">
+        </a>
+        <div class="dropdown ml-auto mr-2 order-2 order-md-3">
+          <a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <div class="avatar" style="background-image: url(img/avatar.webp);"></div>
+          </a>
+
+          <div class="dropdown-menu dropdown-avatar dropdown-menu-right" aria-labelledby="dropdownMenuLink">
+            <a class="dropdown-item item-profile" href="#">
+              <img src="img/avatar.webp" alt="">
+              <div class="ml-2">
+                <h6>Anna Bronte</h6>
+                <span class="card-text">annabronte@gmail.com</span>
+              </div>
+            </a>
+            <div class="dropdown-inside">
+            <a class="dropdown-item dropdown-toggle-inside" href="#!"><span class="mr-2"><i class="fa-solid fa-clock-rotate-left mr-2" style="color: #33117f;"></i>Generator history</span>
+              <i class="fa-solid fa-chevron-right ml-auto"></i>
+            </a>
+            <div class="dropdown-menu-inside">
+              <a class="dropdown-item" href="#!">Job Skills</a>
+              <a class="dropdown-item" href="#!">Job Responsibilities</a>
+              <a class="dropdown-item" href="#!">Job Qualifications</a>
+              <a class="dropdown-item" href="#!">Job Description</a>
+              <a class="dropdown-item" href="#!">Job Description Rewriter</a>
+            </div>
+          </div>
+            <a class="dropdown-item" href="#"><i class="fa-solid fa-pen-ruler mr-2" style="color: #33117f;"></i>Profile settings
+            </a>
+            <a class="dropdown-item" href="#"><i class="fa-solid fa-arrow-right-from-bracket mr-2" style="color: #33117f;"></i>Log out
+            </a>
+          </div>
+        </div>
+        <button class="navbar-toggler order-3 order-md-2" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse order-3 order-md-2" id="navbarTogglerDemo02">
+          <ul class="navbar-nav mx-auto mt-2 mt-lg-0">
+            <li class="nav-item">
+              <div class="dropdown nav-link">
+                <a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Free Tools<i class="fa-solid fa-chevron-down ml-2" style="color: #000000;"></i></a>
+
+                <div class="dropdown-menu dropdown-tools" aria-labelledby="dropdownMenuLink">
+                  <div class="row">
+                    <div class="col-12 col-md-6">
+                      <a class="dropdown-item" href="job_skill_gen.html">
+                        <img src="img/tool-1.webp" alt="" style="height: 34px;">
+                        <div class="ml-3">
+                          <h6>Job Skills Generator</h6>
+                          <p style="text-align: left;">This is a feature that helps create job skills with the help of artificial intelligence</p>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="col-12 col-md-6">
+                      <a class="dropdown-item" href="#">
+                        <img src="img/tool-4.webp" alt="" style="height: 34px;">
+                        <div class="ml-3">
+                          <h6>Job Description Rewriter</h6>
+                          <p style="text-align: left;">It takes a specific job description and rewrites or modifies and optimizes it</p>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="col-12 col-md-6">
+                      <a class="dropdown-item" href="job_resp_gen.html">
+                        <img src="img/tool-2.webp" alt="" style="height: 34px;">
+                        <div class="ml-3">
+                          <h6>Job Responsibilities Generator</h6>
+                          <p style="text-align: left;">It is a responsibility that a person has to perform as part of their job</p>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="col-12 col-md-6">
+                      <a class="dropdown-item" href="#">
+                        <img src="img/tool-5.webp" alt="" style="height: 34px;">
+                        <div class="ml-3">
+                          <h6>Job Description Generator</h6>
+                          <p style="text-align: left;">Users can create a complete job description by entering specific information.</p>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="col-12 col-md-6">
+                      <a class="dropdown-item" href="job_qual_gen.html" style="border: 0;">
+                        <img src="img/tool-3.webp" alt="" style="height: 34px;">
+                        <div class="ml-3">
+                          <h6>Job Qualifications Generator</h6>
+                          <p style="text-align: left;">It creates job skills with artificial intelligence just like a job responsibility generator.</p>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="blog.html">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact-us.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+
+      <!-- Nav End -->
+
+
+      <!-- Main Text start -->
+
+
+      <div class="title">
+        <h1>Job description generator for recruiters and hiring managers</h1>
+      </div>
+      <div class="subtitle">
+        <p>Streamline your HR tasks with our tech-centric job description generator. Craft detailed descriptions effortlessly and find the perfect candidates in no time</p>
+      </div>
+
+
+      <!-- Main Text End -->
+
+
+      <div class="tab-image">
+        <div class="top-bar">
+          <span style="background-color: red;"></span>
+          <span style="background-color: yellow;"></span>
+          <span style="background-color: green;"></span>
+        </div>
+        <img src="img/main-img.webp" alt="">
+      </div>
+      <div class="try-btn">
+        <a href="#!">Try for free now</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- First Screen End -->
+
+
+<!-- Partners Block Start -->
+
+
+<section class="partners">
+  <h4>As seen in</h4>
+  <div class="row">
+    <div class="col">
+      <div class="card-partner">
+        <img src="img/chad.webp" alt="">
+      </div>
+    </div>
+    <div class="col">
+      <div class="card-partner">
+        <img src="img/product_hunt.webp" alt="">
+      </div>
+    </div>
+    <div class="col">
+      <div class="card-partner">
+        <img src="img/gsv.webp" alt="">
+      </div>
+    </div>
+    <div class="col">
+      <div class="card-partner">
+        <img src="img/pioneer.webp" alt="">
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Partners Block End -->
+
+
+<!-- Info Block Start -->
+
+
+<section class="need-info">
+  <div class="container">
+    <div class="need-title">
+      <h2>Why <span style="color: #8B5EF6;">you need</span> a job description generator</h2>
+    </div>
+    <div class="row">
+      <div class="col-12 col-lg-5 mb-4 mb-lg-0">
+        <div class="need-card">
+          <h3>3x more applicants</h3>
+          <p>Get 3 times more applicants for your opening roles. The generated jobs are optimized for humans and search engines. Using a job description generator can also save you time and productivity.</p>
+          <img src="img/applicant.webp" alt="">
+        </div>
+      </div>
+      <div class=" col-12 col-lg-7">
+        <div class="need-card">
+          <h3>Google for Jobs</h3>
+          <p>Google rolled out a new algorithm starting from October 2021 to enhance the candidates experience when searching for jobs in Google.  The new algorithm has a content policy that each post should follow including ensuring the job description has no grammar issues</p>
+          <img src="img/sign-card.webp" alt="" style="margin-top: -16px;">
+        </div>
+      </div>
+      <div class="col mt-4">
+        <div class="need-card text-lg-center" style="max-height: 638px; padding-bottom: 0;">
+          <h3>Copy/paste vs Generator</h3>
+          <p class="text-lg-center" style="margin-bottom: 24px;">50% of UK companies admitted that they copy/paste job descriptions from the internet. <br> Job descriptions are among the essential sources of information for hiring managers in finding the right candidate. Their purpose is to capture the requirements of the job and give an idea about the direction of the job. </p>
+          <div class="try-btn" style="margin: 0 auto;">
+            <a href="#!">Learn more</a>
+          </div>
+          <img src="img/copy-paste.webp" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Info Block End -->
+
+
+<!-- Tool Cards Start -->
+
+
+<section class="tools">
+  <div class="container">
+    <div class="tools-title">
+      <h2><span style="color: #8B5EF6;">Our tools</span> for creating high-quality job descriptions</h2>
+    </div>
+    <div class="row">
+      <div class="col-12 col-lg-4">
+        <div class="tools-card mb-4 mb-lg-0" style="background-image: url(img/tool-bg.webp)">
+          <img src="img/tool-1.webp" alt="">
+          <h5>Job Skills Generator</h5>
+          <p>This is a feature that helps create job skills with the help of artificial intelligence</p>
+        </div>
+      </div>
+      <div class="col-12 col-lg-4">
+        <div class="tools-card mb-4 mb-lg-0" style="background-image: url(img/tool-bg2.webp)">
+          <img src="img/tool-2.webp" alt="">
+          <h5>Job Responsibilities Generator</h5>
+          <p>It is a responsibility that a person has to perform as part of their job</p>
+        </div>
+      </div>
+      <div class="col-12 col-lg-4">
+        <div class="tools-card" style="background-image: url(img/tool-bg3.webp)">
+          <img src="img/tool-3.webp" alt="">
+          <h5>Job Qualifications Generator</h5>
+          <p>It creates job skills with artificial intelligence just like a job responsibility generator.</p>
+        </div>
+      </div>
+      <div class="col-12 col-lg-6 mt-4">
+        <div class="tools-card" style="background-image: url(img/tool-bg4.webp)">
+          <img src="img/tool-4.webp" alt="">
+          <h5>Job Description Rewriter</h5>
+          <p>It's a tool or service that takes a given job description and uses artificial intelligence to rewrite or modify it and optimize it.</p>
+        </div>
+      </div>
+      <div class="col-12 col-lg-6 mt-4">
+        <div class="tools-card" style="background-image: url(img/tool-bg5.webp)">
+          <img src="img/tool-5.webp" alt="">
+          <h5>Job Description Generator</h5>
+          <p>With this tool, users can create a complete job description by entering specific information such as job title, skills, years of experience.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Tool Cards End -->
+
+
+<!-- Job Generator Start -->
+
+
+<section class="generator">
+  <div class="container overflow-hidden d-flex flex-column">
+    <div class="generator-title">
+      <h2>Have <span style="color: #8B5EF6;">you tried</span> our job description generator?</h2>
+    </div>
+    <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+
+
+      <!-- First Tab Button Start -->
+      <li class="nav-item">
+        <a class="nav-link active" id="pills-skill-tab" data-toggle="pill" href="#pills-skill" role="tab" aria-controls="pills-skill" aria-selected="true">Job Skills</a>
+      </li>
+      <!-- First Tab Button End -->
+
+
+      <!-- Second Tab Button Start -->
+      <li class="nav-item">
+        <a class="nav-link" id="pills-responsibilities-tab" data-toggle="pill" href="#pills-responsibilities" role="tab" aria-controls="pills-responsibilities" aria-selected="false">Job Responsibilities</a>
+      </li>
+      <!-- Second Tab Button End -->
+
+
+      <!-- Third Tab Button Start -->
+      <li class="nav-item">
+        <a class="nav-link" id="pills-qualifications-tab" data-toggle="pill" href="#pills-qualifications" role="tab" aria-controls="pills-qualifications" aria-selected="false">Job Qualifications</a>
+      </li>
+      <!-- Third Tab Button End -->
+
+
+      <!-- Fourth Tab Button Start -->
+      <li class="nav-item">
+        <a class="nav-link" id="pills-description-tab" data-toggle="pill" href="#pills-description" role="tab" aria-controls="pills-description" aria-selected="false">Job Description</a>
+      </li>
+      <!-- Fourth Tab Button End -->
+
+
+      <!-- Fivth Tab Button Start -->
+      <li class="nav-item">
+        <a class="nav-link" id="pills-rewriter-tab" data-toggle="pill" href="#pills-rewriter" role="tab" aria-controls="pills-rewriter" aria-selected="false">Job Description Rewriter</a>
+      </li>
+      <!-- Fivth Tab Button End -->
+
+
+    </ul>
+    <div class="tab-content" id="pills-tabContent">
+      <div class="tab-pane fade show active" id="pills-skill" role="tabpanel" aria-labelledby="pills-skill-tab">
+
+
+        <!-- First Tab Window Start -->
+        <div class="first-tab">
+          <img src="img/stars.webp" alt="">
+          <div class="tab-title">
+            <h5>Job Skills Generator</h5>
+            <p>Enter a job title to generate a list of skills</p>
+          </div>
+          <form class="ml-md-auto">
+            <div class="form-group"> 
+              <select class="form-control">
+                <div><i class="fa-solid fa-chevron-down"></i></div>
+                <option value="formal">👔 Formal</option>
+                <option value="informal">👕 Informal</option>
+                <option value="joyful">😁 Joyful</option>
+                <option value="humor">😂 Humor</option>
+              </select>
+            </div>
+          </form>
+        </div>
+        <form class="tab-text-area">
+          <div class="form-group">
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="11" placeholder="Enter a job title (required), industry, years of experience and country (optional)"></textarea>
+            <div class="review d-none">
+              <button class="btn copy-btn">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_11554_5802)">
+                  <path d="M7 9.667C7 8.95967 7.28099 8.28131 7.78115 7.78115C8.28131 7.28099 8.95967 7 9.667 7H18.333C18.6832 7 19.03 7.06898 19.3536 7.20301C19.6772 7.33704 19.9712 7.53349 20.2189 7.78115C20.4665 8.0288 20.663 8.32281 20.797 8.64638C20.931 8.96996 21 9.31676 21 9.667V18.333C21 18.6832 20.931 19.03 20.797 19.3536C20.663 19.6772 20.4665 19.9712 20.2189 20.2189C19.9712 20.4665 19.6772 20.663 19.3536 20.797C19.03 20.931 18.6832 21 18.333 21H9.667C9.31676 21 8.96996 20.931 8.64638 20.797C8.32281 20.663 8.0288 20.4665 7.78115 20.2189C7.53349 19.9712 7.33704 19.6772 7.20301 19.3536C7.06898 19.03 7 18.6832 7 18.333V9.667Z" stroke="#9C91B4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M4.012 16.737C3.70534 16.5622 3.45027 16.3095 3.27258 16.0045C3.09488 15.6995 3.00085 15.353 3 15V5C3 3.9 3.9 3 5 3H15C15.75 3 16.158 3.385 16.5 4" stroke="#9C91B4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                </g>
+                <defs>
+                  <clipPath id="clip0_11554_5802">
+                    <rect width="24" height="24" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+              </button>
+              <button class="btn like-btn">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M7 11V19C7 19.2652 6.89464 19.5196 6.70711 19.7071C6.51957 19.8946 6.26522 20 6 20H4C3.73478 20 3.48043 19.8946 3.29289 19.7071C3.10536 19.5196 3 19.2652 3 19V12C3 11.7348 3.10536 11.4804 3.29289 11.2929C3.48043 11.1054 3.73478 11 4 11H7ZM7 11C8.06087 11 9.07828 10.5786 9.82843 9.82843C10.5786 9.07828 11 8.06087 11 7V6C11 5.46957 11.2107 4.96086 11.5858 4.58579C11.9609 4.21071 12.4696 4 13 4C13.5304 4 14.0391 4.21071 14.4142 4.58579C14.7893 4.96086 15 5.46957 15 6V11H18C18.5304 11 19.0391 11.2107 19.4142 11.5858C19.7893 11.9609 20 12.4696 20 13L19 18C18.8562 18.6135 18.5834 19.1402 18.2227 19.501C17.8619 19.8617 17.4328 20.0368 17 20H10C9.20435 20 8.44129 19.6839 7.87868 19.1213C7.31607 18.5587 7 17.7956 7 17" stroke="#9C91B4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </button>
+              <button class="btn dislike-btn">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M7 12.9999V4.99993C7 4.73472 6.89464 4.48036 6.70711 4.29283C6.51957 4.10529 6.26522 3.99993 6 3.99993H4C3.73478 3.99993 3.48043 4.10529 3.29289 4.29283C3.10536 4.48036 3 4.73472 3 4.99993V11.9999C3 12.2651 3.10536 12.5195 3.29289 12.707C3.48043 12.8946 3.73478 12.9999 4 12.9999H7ZM7 12.9999C8.06087 12.9999 9.07828 13.4214 9.82843 14.1715C10.5786 14.9217 11 15.9391 11 16.9999V17.9999C11 18.5304 11.2107 19.0391 11.5858 19.4141C11.9609 19.7892 12.4696 19.9999 13 19.9999C13.5304 19.9999 14.0391 19.7892 14.4142 19.4141C14.7893 19.0391 15 18.5304 15 17.9999V12.9999H18C18.5304 12.9999 19.0391 12.7892 19.4142 12.4141C19.7893 12.0391 20 11.5304 20 10.9999L19 5.99993C18.8562 5.38646 18.5834 4.85969 18.2227 4.49897C17.8619 4.13825 17.4328 3.96311 17 3.99993H10C9.20435 3.99993 8.44129 4.316 7.87868 4.87861C7.31607 5.44122 7 6.20428 7 6.99993" stroke="#9C91B4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </form>
+        <div class="tab-filter">
+          <div class="filter-item">
+            <label for="">industry (optional)</label>
+            <div class="form-group"> 
+              <select class="form-control">
+                <option value="none">None</option>
+                <option value="technology">Technology</option>
+                <option value="design">Design</option>
+                <option value="culture">Culture</option>
+                <option value="since">Since</option>
+              </select>
+            </div>
+          </div>
+          <div class="filter-item">
+            <label for="">years of experience (optional)</label>
+            <div class="form-group"> 
+              <select class="form-control">
+                <option value="none">None</option>
+                <option value="one">1</option>
+                <option value="three">2</option>
+                <option value="five">3</option>
+              </select>
+            </div>
+          </div>
+          <div class="filter-item" style="border-right: 0;">
+            <label for="">country (optional)</label>
+            <form class="ml-auto">
+              <div class="form-group"> 
+                <select class="form-control">
+                  <option value="none">None</option>
+                  <option value="an">Andorra</option>
+                  <option value="am">Armenia</option>
+                  <option value="au">Austria</option>
+                  <option value="aus">Australia</option>
+                  <option value="uz">Uzbekistan</option>
+                  <option value="gb">Great Britain</option>
+                  <option value="ua">Ukraine</option>
+                </select>
+              </div>
+            </form>
+          </div>
+          <button class="btn-loading btn" id="generate">
+            <span>Generate</span>
+          </button>
+          <button class="btn-loading btn d-none regenerate" id="generate">
+            <span><i class="fa-solid fa-rotate-left mr-2"></i>Regenerate</span>
+          </button>
+        </div>
+
+
+        <!-- First Tab Window End -->
+
+
+      </div>
+      <div class="tab-pane fade" id="pills-responsibilities" role="tabpanel" aria-labelledby="pills-profile-responsibilities">
+
+
+        <!-- Second Tab Window Start -->
+
+
+        <div class="second-tab">
+          <img src="img/stars.webp" alt="">
+          <div class="tab-title">
+            <h5>Job Responsibilities</h5>
+            <p>Enter a job title to generate a list of skills</p>
+          </div>
+          <form class="ml-md-auto">
+            <div class="form-group"> 
+              <select class="form-control">
+                <option value="formal">👔 Formal</option>
+                <option value="informal">👕 Informal</option>
+                <option value="joyful">😁 Joyful</option>
+                <option value="humor">😂 Humor</option>
+              </select>
+            </div>
+          </form>
+        </div>
+        <form class="tab-text-area">
+          <div class="form-group">
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="11" placeholder="Enter a job title (required), industry, years of experience and country (optional)"></textarea>
+            <div class="review d-none">
+              <button class="btn">
+                <img src="img/copy.svg" alt="">
+              </button>
+              <button class="btn">
+                <img src="img/like.svg" alt="">
+              </button>
+              <button class="btn">
+                <img src="img/dislike.svg" alt="">
+              </button>
+            </div>
+          </div>
+        </form>
+        <div class="tab-filter">
+          <div class="filter-item">
+            <label for="">industry (optional)</label>
+            <div class="form-group"> 
+              <select class="form-control">
+                <option value="none">None</option>
+                <option value="technology">Technology</option>
+                <option value="design">Design</option>
+                <option value="culture">Culture</option>
+                <option value="since">Since</option>
+              </select>
+            </div>
+          </div>
+          <div class="filter-item">
+            <label for="">years of experience (optional)</label>
+            <div class="form-group"> 
+              <select class="form-control">
+                <option value="none">None</option>
+                <option value="one">1</option>
+                <option value="three">2</option>
+                <option value="five">3</option>
+              </select>
+            </div>
+          </div>
+          <div class="filter-item" style="border-right: 0;">
+            <label for="">country (optional)</label>
+            <form class="ml-auto">
+              <div class="form-group"> 
+                <select class="form-control">
+                  <option value="none">None</option>
+                  <option value="an">Andorra</option>
+                  <option value="am">Armenia</option>
+                  <option value="au">Austria</option>
+                  <option value="aus">Australia</option>
+                  <option value="uz">Uzbekistan</option>
+                  <option value="gb">Great Britain</option>
+                  <option value="ua">Ukraine</option>
+                </select>
+              </div>
+            </form>
+          </div>
+          <div class="try-btn">
+            <a href="#!" id="generate">Generate</a>
+          </div>
+        </div>
+
+
+        <!-- Second Tab Window End -->
+      </div>
+
+
+      <div class="tab-pane fade" id="pills-qualifications" role="tabpanel" aria-labelledby="pills-qualifications-tab">
+
+
+        <!-- Third Tab Window Start -->
+
+
+        <div class="third-tab">
+          <img src="img/stars.webp" alt="">
+          <div class="tab-title">
+            <h5>Job Qualifications</h5>
+            <p>Enter a job title to generate a list of skills</p>
+          </div>
+          <form class="ml-md-auto">
+            <div class="form-group"> 
+              <select class="form-control">
+                <option value="formal">👔 Formal</option>
+                <option value="informal">👕 Informal</option>
+                <option value="joyful">😁 Joyful</option>
+                <option value="humor">😂 Humor</option>
+              </select>
+            </div>
+          </form>
+        </div>
+        <form class="tab-text-area">
+          <div class="form-group">
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="11" placeholder="Enter a job title (required), industry, years of experience and country (optional)"></textarea>
+            <div class="review d-none">
+              <button class="btn">
+                <img src="img/copy.svg" alt="">
+              </button>
+              <button class="btn">
+                <img src="img/like.svg" alt="">
+              </button>
+              <button class="btn">
+                <img src="img/dislike.svg" alt="">
+              </button>
+            </div>
+          </div>
+        </form>
+        <div class="tab-filter">
+          <div class="filter-item">
+            <label for="">industry (optional)</label>
+            <div class="form-group"> 
+              <select class="form-control">
+                <option value="none">None</option>
+                <option value="technology">Technology</option>
+                <option value="design">Design</option>
+                <option value="culture">Culture</option>
+                <option value="since">Since</option>
+              </select>
+            </div>
+          </div>
+          <div class="filter-item">
+            <label for="">years of experience (optional)</label>
+            <div class="form-group"> 
+              <select class="form-control">
+                <option value="none">None</option>
+                <option value="one">1</option>
+                <option value="three">2</option>
+                <option value="five">3</option>
+              </select>
+            </div>
+          </div>
+          <div class="filter-item" style="border-right: 0;">
+            <label for="">country (optional)</label>
+            <form class="ml-auto">
+              <div class="form-group"> 
+                <select class="form-control">
+                  <option value="none">None</option>
+                  <option value="an">Andorra</option>
+                  <option value="am">Armenia</option>
+                  <option value="au">Austria</option>
+                  <option value="aus">Australia</option>
+                  <option value="uz">Uzbekistan</option>
+                  <option value="gb">Great Britain</option>
+                  <option value="ua">Ukraine</option>
+                </select>
+              </div>
+            </form>
+          </div>
+          <div class="try-btn">
+            <a href="#!" id="generate">Generate</a>
+          </div>
+        </div>
+
+
+        <!-- Third Tab Window End -->
+
+
+      </div>
+      <div class="tab-pane fade" id="pills-description" role="tabpanel" aria-labelledby="pills-description-tab">
+
+
+        <!-- Fourth Tab Window Start -->
+
+
+        <div class="fourth-tab">
+          <img src="img/stars.webp" alt="">
+          <div class="tab-title">
+            <h5>Job Description</h5>
+            <p>Enter bullet points such as title, skills, years of experience, industry, country.</p>
+          </div>
+          <form class="ml-md-auto">
+            <div class="form-group"> 
+              <select class="form-control">
+                <option value="formal">👔 Formal</option>
+                <option value="informal">👕 Informal</option>
+                <option value="joyful">😁 Joyful</option>
+                <option value="humor">😂 Humor</option>
+              </select>
+            </div>
+          </form>
+        </div>
+        <form class="tab-text-area">
+          <div class="form-group">
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="11" placeholder="&#149; Enter a job title
+&#149; Enter a skills
+&#149; Enter years of experience
+&#149; Enter a industry
+&#149; Enter a country"></textarea>
+            <div class="review d-none">
+              <button class="btn">
+                <img src="img/copy.svg" alt="">
+              </button>
+              <button class="btn">
+                <img src="img/like.svg" alt="">
+              </button>
+              <button class="btn">
+                <img src="img/dislike.svg" alt="">
+              </button>
+            </div>
+          </div>
+        </form>
+        <div class="tab-filter">
+          <div class="filter-item">
+            <label for="">industry (optional)</label>
+            <div class="form-group"> 
+              <select class="form-control">
+                <option value="none">None</option>
+                <option value="technology">Technology</option>
+                <option value="design">Design</option>
+                <option value="culture">Culture</option>
+                <option value="since">Since</option>
+              </select>
+            </div>
+          </div>
+          <div class="filter-item">
+            <label for="">years of experience (optional)</label>
+            <div class="form-group"> 
+              <select class="form-control">
+                <option value="none">None</option>
+                <option value="one">1</option>
+                <option value="three">2</option>
+                <option value="five">3</option>
+              </select>
+            </div>
+          </div>
+          <div class="filter-item" style="border-right: 0;">
+            <label for="">country (optional)</label>
+            <form class="ml-auto">
+              <div class="form-group"> 
+                <select class="form-control">
+                  <option value="none">None</option>
+                  <option value="an">Andorra</option>
+                  <option value="am">Armenia</option>
+                  <option value="au">Austria</option>
+                  <option value="aus">Australia</option>
+                  <option value="uz">Uzbekistan</option>
+                  <option value="gb">Great Britain</option>
+                  <option value="ua">Ukraine</option>
+                </select>
+              </div>
+            </form>
+          </div>
+          <div class="try-btn">
+            <a href="#!" id="generate">Generate</a>
+          </div>
+        </div>
+
+
+        <!-- Fourth Tab Window End -->
+
+
+        <!-- Fivth Tab Window Start --> 
+
+
+      </div>
+      <div class="tab-pane fade" id="pills-rewriter" role="tabpanel" aria-labelledby="pills-rewriter-tab">
+        <!-- Fivth Tab Window Start -->
+        <div class="fiveth-tab">
+          <img src="img/stars.webp" alt="">
+          <div class="tab-title">
+            <h5>Job Description Rewriter</h5>
+            <p>Enter a full job description, and AI will rewrite it</p>
+          </div>
+          <form class="ml-md-auto">
+            <div class="form-group"> 
+              <select class="form-control">
+                <option value="formal">👔 Formal</option>
+                <option value="informal">👕 Informal</option>
+                <option value="joyful">😁 Joyful</option>
+                <option value="humor">😂 Humor</option>
+              </select>
+            </div>
+          </form>
+        </div>
+        <form class="tab-text-area">
+          <div class="form-group">
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="11" placeholder="Enter a full job description"></textarea>
+            <div class="review">
+              <div class="review d-none">
+              <button class="btn">
+                <img src="img/copy.svg" alt="">
+              </button>
+              <button class="btn">
+                <img src="img/like.svg" alt="">
+              </button>
+              <button class="btn">
+                <img src="img/dislike.svg" alt="">
+              </button>
+            </div>
+            </div>
+          </div>
+        </form>
+        <div class="tab-filter">
+          <div class="filter-item">
+            <label for="">industry (optional)</label>
+            <div class="form-group"> 
+              <select class="form-control">
+                <option value="none">None</option>
+                <option value="technology">Technology</option>
+                <option value="design">Design</option>
+                <option value="culture">Culture</option>
+                <option value="since">Since</option>
+              </select>
+            </div>
+          </div>
+          <div class="filter-item">
+            <label for="">years of experience (optional)</label>
+            <div class="form-group"> 
+              <select class="form-control">
+                <option value="none">None</option>
+                <option value="one">1</option>
+                <option value="three">2</option>
+                <option value="five">3</option>
+              </select>
+            </div>
+          </div>
+          <div class="filter-item" style="border-right: 0;">
+            <label for="">country (optional)</label>
+            <form class="ml-auto">
+              <div class="form-group"> 
+                <select class="form-control">
+                  <option value="none">None</option>
+                  <option value="an">Andorra</option>
+                  <option value="am">Armenia</option>
+                  <option value="au">Austria</option>
+                  <option value="aus">Australia</option>
+                  <option value="uz">Uzbekistan</option>
+                  <option value="gb">Great Britain</option>
+                  <option value="ua">Ukraine</option>
+                </select>
+              </div>
+            </form>
+          </div>
+          <div class="try-btn">
+            <a href="#!" id="generate">Generate</a>
+          </div>
+        </div>
+
+
+        <!-- Fivth Tab Window End -->
+
+
+      </div>
+    </div>
+
+
+
+    <!-- Sign Banner Start -->
+
+
+    <div class="banner">
+      <h5>Do you want to keep the history of created job descriptions?</h5>
+      <a href="#!" class="sign-up-now">sign up now</a>
+    </div>
+
+
+    <!-- Sign Banner End -->
+
+
+
+  </div>
+</section>
+
+
+<!-- Job Generator End -->
+
+
+
+
+<!-- Footer Start -->
+
+
+<footer>
+  <div class="container">
+    <div class="footer_inner">
+      <ul class="footer-contacts">
+        <li>
+          <a href="#!" class="pb-4">
+            <img src="img/footer-logo.svg" alt="">
+          </a>
+        </li>
+        <li class="pt-5">
+          <a href="mailto:support@jobdescription.ai"><i class="fa-regular fa-envelope mr-2" style="color: #ffffff;"></i>support@jobdescription.ai</a>
+        </li>
+        <li class="py-4">
+          <a href="#!"><i class="fa-solid fa-location-dot mr-2" style="color: #ffffff;"></i>Kemp House, 128 City Road, London, <br> United Kingdom</a>
+        </li>
+      </ul>
+      <ul class="footer-tools">
+        <li>
+          <h5>Our tools</h5>
+        </li>
+        <li>
+          <a href="job_skill_gen.html">Job Skills Generator  </a>
+        </li>
+        <li>
+          <a href="job_resp_gen.html">Job Responsibilities Generator </a>
+        </li>
+        <li>
+          <a href="job_qual_gen.html">Job Qualifications Generator </a>
+        </li>
+        <li>
+          <a href="#!">Job Description Rewriter </a>
+        </li>
+        <li>
+          <a href="#!">Job Description Generator </a>
+        </li>
+      </ul>
+      <ul class="footer-links">
+        <li>
+          <h5>Quick links</h5>
+        </li>
+        <li>
+          <a href="index.html">Home </a>
+        </li>
+        <li>
+          <a href="#!">Free Tools </a>
+        </li>
+        <li>
+          <a href="#!">Pricing </a>
+        </li>
+        <li>
+          <a href="#!">Integrations </a>
+        </li>
+        <li>
+          <a href="blog.html">Blog </a>
+        </li>
+      </ul>
+    </div>
+    <div class="footer-bottom">
+      <ul class="copyright">
+        <li>© Copyright @2023 Job Description AI</li>
+      </ul>
+      <ul class="privacy">
+        <li class="d-block d-md-none mr-auto">
+          <a href="#!" class="mr-3"><i class="fa-brands fa-linkedin fa-xl" style="color: #ffffff;"></i></a>
+          <a href="#!"><i class="fa-brands fa-twitter fa-xl" style="color: #ffffff;"></i></a>
+        </li>
+        <li>
+          <a href="#!" class="mr-3 mr-md-5">Privacy policy</a>
+          <a href="#!">Terms & Conditions</a>
+        </li>
+      </ul>
+      <ul class="social">
+        <li class="d-none d-md-block">
+          <a href="#!" class="mr-3"><i class="fa-brands fa-linkedin" style="color: #ffffff;"></i></a>
+          <a href="#!"><i class="fa-brands fa-twitter" style="color: #ffffff;"></i></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+
+<!-- Footer End -->
+
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/page-scroll-to-id@1.6.8/jquery.malihu.PageScroll2id.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js" integrity="sha512-p7Ey2nBhKYEi9yh0iDs+GMA0ttebOqVl3OO2oWRzRxtDoN/RedyYcHFUJZhMVi8NKRdEA7n+9NTNQX/kFIZgNw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="js/common.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>JobDescription</title>
+    <link rel="icon" type="image/x-icon" href="img/">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/node-waves/0.7.6/waves.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/node-waves/0.7.6/waves.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css">
+
+
+</head>
+<body class="blog-bg">
+
+<!-- First screen start -->
+
+<section class="main-section" style="background-image: url(img/contacts-bg.svg); background-size: cover; background-repeat: no-repeat; background-position: left top 110%;">
+  <div class="main-section_wrapper" style="background: transparent;">
+    <div class="container">
+
+      <!-- Nav Start -->
+
+
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="index.html">
+          <img src="img/logo.svg" alt="">
+        </a>
+        <a href="registration.html" class="sign-up ml-auto mr-2 order-md-3">Sign Up</a>
+        <button class="sandwich collapsed d-block d-lg-none" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02">
+          <span></span>
+        </button>
+
+
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav mx-auto mt-2 mt-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item active">
+              <div class="dropdown nav-link">
+                <a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Free Tools<i class="fa-solid fa-chevron-down ml-2" style="color: #000000;"></i></a>
+
+                <div class="dropdown-menu dropdown-tools" aria-labelledby="dropdownMenuLink">
+                  <div class="row">
+                    <div class="col-12 col-md-6">
+                      <a class="dropdown-item" href="job_skill_gen.html">
+                        <img src="img/tool-1.webp" alt="" style="height: 34px;">
+                        <div class="ml-3">
+                          <h6>Job Skills Generator</h6>
+                          <p style="text-align: left;">This is a feature that helps create job skills with the help of artificial intelligence</p>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="col-12 col-md-6">
+                      <a class="dropdown-item" href="#">
+                        <img src="img/tool-4.webp" alt="" style="height: 34px;">
+                        <div class="ml-3">
+                          <h6>Job Description Rewriter</h6>
+                          <p style="text-align: left;">It takes a specific job description and rewrites or modifies and optimizes it</p>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="col-12 col-md-6">
+                      <a class="dropdown-item" href="job_resp_gen.html">
+                        <img src="img/tool-2.webp" alt="" style="height: 34px;">
+                        <div class="ml-3">
+                          <h6>Job Responsibilities Generator</h6>
+                          <p style="text-align: left;">It is a responsibility that a person has to perform as part of their job</p>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="col-12 col-md-6">
+                      <a class="dropdown-item" href="#">
+                        <img src="img/tool-5.webp" alt="" style="height: 34px;">
+                        <div class="ml-3">
+                          <h6>Job Description Generator</h6>
+                          <p style="text-align: left;">Users can create a complete job description by entering specific information.</p>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="col-12 col-md-6">
+                      <a class="dropdown-item" href="job_qual_gen.html" style="border: 0;">
+                        <img src="img/tool-3.webp" alt="" style="height: 34px;">
+                        <div class="ml-3">
+                          <h6>Job Qualifications Generator</h6>
+                          <p style="text-align: left;">It creates job skills with artificial intelligence just like a job responsibility generator.</p>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Pricing</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="blog.html">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <!-- Nav End -->
+
+
+      <div class="title">
+        <h1>Latest news and blogs</h1>
+      </div>
+      <div class="subtitle">
+        <p>Explore expert insights, tips and industry news on how to create compelling job descriptions and optimize the hiring process.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- First screen end -->
+
+
+<!-- Blog search/filter start -->
+
+
+<section class="blog">
+  <div class="container">
+    <div class="blog-filter">
+      <div class="row row-5 justify-content-center">
+        <div class="col-10 col-lg-6">
+          <form class="form-inline" id="search-form" action="search.html" target="_blank">
+            <input class="form-control" type="text" placeholder="Search posts and blogs here" id="search">
+            <span class="search">
+              <img src="img/search.svg" alt="">
+            </span>
+          </form>
+        </div>
+        <div class="col-2 col-lg-6">
+          <div class="d-flex justify-content-end">
+            <button class="btn-filter btn" type="button">
+              <span style="width: 16px;">
+                <img src="img/filter.svg" alt="">
+              </span>
+              <span class="d-none d-lg-block">Filters</span>
+              <span class="filtered">2</span>
+            </button>
+            <div class="dropdown-menu-right filter-menu d-none">
+              <div>
+                <h5>Categories</h5>
+                <div class="button-group-pills" data-toggle="buttons">
+                  <label class="btn btn-default active">
+                    <input type="checkbox" name="options" checked="">
+                    <div>HR</div>
+                  </label>
+                  <label class="btn btn-default">
+                    <input type="checkbox" name="options">
+                    <div>Job Description</div>
+                  </label>
+                  <label class="btn btn-default">
+                    <input type="checkbox" name="options">
+                    <div>Job</div>
+                  </label>
+                  <label class="btn btn-default">
+                    <input type="checkbox" name="options">
+                    <div>Google for jobs</div>
+                  </label>
+                  <label class="btn btn-default">
+                    <input type="checkbox" name="options">
+                    <div>Job Generator</div>
+                  </label>
+                  <label class="btn btn-default">
+                    <input type="checkbox" name="options">
+                    <div>Companies</div>
+                  </label>
+                  <label class="btn btn-default">
+                    <input type="checkbox" name="options">
+                    <div>Arificial</div>
+                  </label>
+                </div>   
+              </div>
+              <div class="dropdown-ite">
+                <h5>tags</h5>
+                <div class="button-group-pills" data-toggle="buttons">
+                  <label class="btn btn-default active">
+                    <input type="checkbox" name="options" checked="">
+                    <div>Bias</div>
+                  </label>
+                  <label class="btn btn-default">
+                    <input type="checkbox" name="options">
+                    <div>Generator</div>
+                  </label>
+                  <label class="btn btn-default">
+                    <input type="checkbox" name="options">
+                    <div>Gender</div>
+                  </label>
+                  <label class="btn btn-default">
+                    <input type="checkbox" name="options">
+                    <div>Template</div>
+                  </label>
+                  <label class="btn btn-default">
+                    <input type="checkbox" name="options">
+                    <div>Jobs</div>
+                  </label>
+                  <label class="btn btn-default">
+                    <input type="checkbox" name="options">
+                    <div>Software</div>
+                  </label>
+                  <label class="btn btn-default">
+                    <input type="checkbox" name="options">
+                    <div>Bias</div>
+                  </label>
+                  <label class="btn btn-default">
+                    <input type="checkbox" name="options">
+                    <div>Generator</div>
+                  </label>
+                  <label class="btn btn-default">
+                    <input type="checkbox" name="options">
+                    <div>Gender</div>
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>  
+</section>
+
+
+<!-- Blog search/filter end -->
+
+
+<!-- Blog cards start -->
+
+
+<section class="cards">
+  <div class="container">
+    <div class="row row-10 mb-md-3 justify-content-center">
+
+
+      <!-- Blog card column start -->
+
+
+      <div class="col-auto">
+        <div class="blog-card">
+          <img src="img/google.webp" alt="">
+          <span class="img_description">description</span>
+          <p class="card-text"><small class="text-muted">June 19, 2024</small></p>
+          <h4>5 things you need to know about Google for Jobs new algorithm</h4>
+          <p>Today, the 1st of October, Google has rolled out a new Google For Jobs algorithm aiming to improve the candidates’ experience when searching for jobs in Google. There are...</p>
+          <a href="#!" class="read-more">read more</a>
+        </div>
+      </div>
+
+
+      <!-- Blog card column end -->
+
+
+      <div class="col-auto">
+        <div class="blog-card">
+          <img src="img/ai-card.webp" alt="">
+          <span class="img_description">description</span>
+          <p class="card-text"><small class="text-muted">June 19, 2024</small></p>
+          <h4>5 things you need to know about Google for Jobs new algorithm</h4>
+          <p>Today, the 1st of October, Google has rolled out a new Google For Jobs algorithm aiming to improve the candidates’ experience when searching for jobs in Google. There are...</p>
+          <a href="#!" class="read-more">read more</a>
+        </div>
+      </div>
+    </div>
+    <div class="row row-10 mb-md-3 justify-content-center">
+      <div class="col-auto">
+        <div class="blog-card">
+          <img src="img/girl-card.webp" alt="">
+          <span class="img_description">description</span>
+          <p class="card-text"><small class="text-muted">June 19, 2024</small></p>
+          <h4>5 things you need to know about Google for Jobs new algorithm</h4>
+          <p>Today, the 1st of October, Google has rolled out a new Google For Jobs algorithm aiming to improve the candidates’ experience when searching for jobs in Google. There are...</p>
+          <a href="#!" class="read-more">read more</a>
+        </div>
+      </div>
+      <div class="col-auto">
+        <div class="blog-card">
+          <img src="img/group-card.webp" alt="">
+          <span class="img_description">description</span>
+          <p class="card-text"><small class="text-muted">June 19, 2024</small></p>
+          <h4>5 things you need to know about Google for Jobs new algorithm</h4>
+          <p>Today, the 1st of October, Google has rolled out a new Google For Jobs algorithm aiming to improve the candidates’ experience when searching for jobs in Google. There are...</p>
+          <a href="#!" class="read-more">read more</a>
+        </div>
+      </div>
+    </div>
+    <div class="row row-10 mb-md-3 justify-content-center">
+      <div class="col-auto">
+        <div class="blog-card">
+          <img src="img/sticker-card.webp" alt="">
+          <span class="img_description">description</span>
+          <p class="card-text"><small class="text-muted">June 19, 2024</small></p>
+          <h4>5 things you need to know about Google for Jobs new algorithm</h4>
+          <p>Today, the 1st of October, Google has rolled out a new Google For Jobs algorithm aiming to improve the candidates’ experience when searching for jobs in Google. There are...</p>
+          <a href="#!" class="read-more">read more</a>
+        </div>
+      </div>
+      <div class="col-auto">
+        <div class="blog-card">
+          <img src="img/ai-card-2.webp" alt="">
+          <span class="img_description">description</span>
+          <p class="card-text"><small class="text-muted">June 19, 2024</small></p>
+          <h4>5 things you need to know about Google for Jobs new algorithm</h4>
+          <p>Today, the 1st of October, Google has rolled out a new Google For Jobs algorithm aiming to improve the candidates’ experience when searching for jobs in Google. There are...</p>
+          <a href="#!" class="read-more">read more</a>
+        </div>
+      </div>
+    </div>
+    <div class="row row-10 justify-content-center">
+      <div class="col-auto">
+        <div class="blog-card">
+          <img src="img/vr-card.webp" alt="">
+          <span class="img_description">description</span>
+          <p class="card-text"><small class="text-muted">June 19, 2024</small></p>
+          <h4>5 things you need to know about Google for Jobs new algorithm</h4>
+          <p>Today, the 1st of October, Google has rolled out a new Google For Jobs algorithm aiming to improve the candidates’ experience when searching for jobs in Google. There are...</p>
+          <a href="#!" class="read-more">read more</a>
+        </div>
+      </div>
+      <div class="col-auto">
+        <div class="blog-card">
+          <img src="img/office-card.webp" alt="">
+          <span class="img_description">description</span>
+          <p class="card-text"><small class="text-muted">June 19, 2024</small></p>
+          <h4>5 things you need to know about Google for Jobs new algorithm</h4>
+          <p>Today, the 1st of October, Google has rolled out a new Google For Jobs algorithm aiming to improve the candidates’ experience when searching for jobs in Google. There are...</p>
+          <a href="#!" class="read-more">read more</a>
+        </div>
+      </div>
+      <div class="col">
+        <a href="#!" class="more-btn">read more</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Blog cards end -->
+
+
+<!-- Footer start -->
+
+
+<footer>
+  <div class="container">
+    <div class="footer_inner">
+      <ul class="footer-contacts">
+        <li>
+          <a href="#!" class="pb-4">
+            <img src="img/footer-logo.svg" alt="">
+          </a>
+        </li>
+        <li class="pt-5">
+          <a href="mailto:support@jobdescription.ai"><i class="fa-regular fa-envelope mr-2" style="color: #ffffff;"></i>support@jobdescription.ai</a>
+        </li>
+        <li class="py-4">
+          <a href="#!"><i class="fa-solid fa-location-dot mr-2" style="color: #ffffff;"></i>Kemp House, 128 City Road, London, <br> United Kingdom</a>
+        </li>
+      </ul>
+      <ul class="footer-tools">
+        <li>
+          <h5>Our tools</h5>
+        </li>
+        <li>
+          <a href="job_skill_gen.html">Job Skills Generator  </a>
+        </li>
+        <li>
+          <a href="job_resp_gen.html">Job Responsibilities Generator </a>
+        </li>
+        <li>
+          <a href="job_qual_gen.html">Job Qualifications Generator </a>
+        </li>
+        <li>
+          <a href="#!">Job Description Rewriter </a>
+        </li>
+        <li>
+          <a href="#!">Job Description Generator </a>
+        </li>
+      </ul>
+      <ul class="footer-links">
+        <li>
+          <h5>Quick links</h5>
+        </li>
+        <li>
+          <a href="index.html">Home </a>
+        </li>
+        <li>
+          <a href="#!">Free Tools </a>
+        </li>
+        <li>
+          <a href="#!">Pricing </a>
+        </li>
+        <li>
+          <a href="#!">Integrations </a>
+        </li>
+        <li>
+          <a href="blog.html">Blog </a>
+        </li>
+      </ul>
+    </div>
+    <div class="footer-bottom">
+      <ul class="copyright">
+        <li>© Copyright @2023 Job Description AI</li>
+      </ul>
+      <ul class="privacy">
+        <li class="d-block d-md-none mr-auto">
+          <a href="#!" class="mr-3"><i class="fa-brands fa-linkedin fa-xl" style="color: #ffffff;"></i></a>
+          <a href="#!"><i class="fa-brands fa-twitter fa-xl" style="color: #ffffff;"></i></a>
+        </li>
+        <li>
+          <a href="#!" class="mr-3 mr-md-5">Privacy policy</a>
+          <a href="#!">Terms & Conditions</a>
+        </li>
+      </ul>
+      <ul class="social">
+        <li class="d-none d-md-block">
+          <a href="#!" class="mr-3"><i class="fa-brands fa-linkedin" style="color: #ffffff;"></i></a>
+          <a href="#!"><i class="fa-brands fa-twitter" style="color: #ffffff;"></i></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+
+<!-- Footer end -->
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/page-scroll-to-id@1.6.8/jquery.malihu.PageScroll2id.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js" integrity="sha512-p7Ey2nBhKYEi9yh0iDs+GMA0ttebOqVl3OO2oWRzRxtDoN/RedyYcHFUJZhMVi8NKRdEA7n+9NTNQX/kFIZgNw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="js/common.js"></script>
+
+</body>
+</html>
