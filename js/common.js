@@ -1,9 +1,9 @@
 $(function() {
 
-$("select.select2").select2({
-      dropdownPosition: 'below',
-      allowClear: true
-    });
+// $("select.select2").select2({
+//       dropdownPosition: 'below',
+//       allowClear: true
+//     });
 
 
 // Password-hide
