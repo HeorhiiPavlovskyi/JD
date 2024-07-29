@@ -6,10 +6,7 @@
     <title>JobDescription</title>
     <link rel="icon" type="image/x-icon" href="img/">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/node-waves/0.7.6/waves.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/node-waves/0.7.6/waves.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/style.css">
 
@@ -303,7 +300,11 @@
             <h5>Job Skills Generator</h5>
             <p>Enter a job title to generate a list of skills</p>
           </div>
-          <form class="ml-auto">
+          <button class="btn btn-light btn-new-gen ml-auto d-none">
+            <img src="img/new-gen.svg" alt="">
+            Start new generate
+          </button>
+          <form class="ml-auto btn-formal">
             <div class="form-group"> 
               <select class="form-control">
                 <div><i class="fa-solid fa-chevron-down"></i></div>
@@ -317,7 +318,31 @@
         </div>
         <form class="tab-text-area">
           <div class="form-group">
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="11" placeholder="Enter a job title (required), industry, years of experience and country (optional)"></textarea>
+            <textarea class="form-control generate-text-area" id="exampleFormControlTextarea1" rows="11" placeholder="Enter a job title (required), industry, years of experience and country (optional)"></textarea>
+            <textarea class="form-control generated-text-area d-none" id="exampleFormControlTextarea2" rows="11">
+  Certainly! As a UI/UX designer, there are several essential skills you’ll need to excel in your field. Let’s explore these skills:
+      1. Prototyping, Wireframing, User Flows, and Mockups:
+        &#149; Wireframes: These are web page layouts stripped of visual design, used to prioritize page elements based on user needs.
+        &#149; Prototypes: Samples or simulations of final products used for testing and gathering feedback. Low-fidelity prototypes 
+        might be sketched on paper, while high-fidelity prototypes allow for mouse and keyboard interaction.
+        &#149; Mockups: Realistic visual models of what a final webpage or application will look like.
+        &#149;  User Flows: Diagrams that map out each step a user takes when using a product or service.
+      2. UX Research Skills:
+        &#149; The ability to gather qualitative and quantitative data about users through research and analysis.
+      3. Creativity and Visual Design Skills:
+        &#149; A keen eye for aesthetics, layout, and visual appeal.
+      4. Interaction Design:
+        &#149; Crafting seamless and intuitive interactions between users and digital products.
+      5. Knowledge of Accessible Design Principles:
+        &#149; Ensuring that designs are inclusive and usable by all, including people with disabilities.
+      6. Information Architecture:
+        &#149; Organizing and structuring content to enhance user navigation.
+      7. UX Writing:
+        &#149; Crafting clear, concise, and user-friendly text within interfaces.
+      8. Proficiency in UI/UX Design Tools:
+        &#149; Familiarity with tools like InVision, Sketch, Adobe XD, and Origami Studio for creating prototypes and mockups.
+Remember that UX design also involves soft skills like empathy, collaboration, and critical thinking. These skills, combined with technical expertise, will help you create frictionless user experiences that meet real user needs. Happy designing! 🎨✨
+If you’re ready to learn more about UX design, consider advancing your skills with the Google UX Design Professional Certificate. You’ll learn how to build wireframes, conduct user research, and create dynamic user interfaces for websites!.</textarea>
             <div class="review d-none">
               <button class="btn copy-btn" type="button">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -373,7 +398,7 @@
             </div>
           </div>
         </form>
-        <div class="tab-filter">
+        <div class="tab-filter" id="generate_tab">
           <div class="filter-item">
             <label for="">industry (optional)</label>
             <div class="form-group"> 
@@ -399,7 +424,7 @@
           </div>
           <div class="filter-item" style="border-right: 0;">
             <label for="">country (optional)</label>
-            <form class="ml-auto">
+            <form>
               <div class="form-group"> 
                 <select class="form-control">
                   <option value="none">None</option>
@@ -416,6 +441,26 @@
           </div>
           <div class="btn-loading" id="generate">
             <a href="#!" type="button">Generate</a>
+          </div>
+        </div>
+        <div class="tab-filter d-none" id="generated_tab">
+          <div class="filter-item border-0">
+            <p class="card-text">
+              skill: 5
+            </p>
+          </div>
+          <div class="filter-item border-0">
+            <p class="card-text">
+              characters: 8
+            </p>
+          </div>
+          <div class="filter-item border-0" style="border-right: 0;">
+            <p class="card-text">
+              words: 8
+            </p>
+          </div>
+          <div class="btn-loading" id="regenerate">
+            <a href="#!" type="button">Regenerate</a>
           </div>
         </div>
 
@@ -436,7 +481,11 @@
             <h5>Job Responsibilities</h5>
             <p>Enter a job title to generate a list of skills</p>
           </div>
-          <form class="ml-auto">
+          <button class="btn btn-light btn-new-gen ml-auto d-none">
+            <img src="img/new-gen.svg" alt="">
+            Start new generate
+          </button>
+          <form class="ml-auto btn-formal">
             <div class="form-group"> 
               <select class="form-control">
                 <option value="formal">👔 Formal</option>
@@ -449,7 +498,31 @@
         </div>
         <form class="tab-text-area">
           <div class="form-group">
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="11" placeholder="Enter a job title (required), industry, years of experience and country (optional)"></textarea>
+            <textarea class="form-control generate-text-area" id="exampleFormControlTextareaResp" rows="11" placeholder="Enter a job title (required), industry, years of experience and country (optional)"></textarea>
+            <textarea class="form-control generated-text-area d-none" id="exampleFormControlTextarea2" rows="11">
+  Certainly! As a UI/UX designer, there are several essential skills you’ll need to excel in your field. Let’s explore these skills:
+      1. Prototyping, Wireframing, User Flows, and Mockups:
+        &#149; Wireframes: These are web page layouts stripped of visual design, used to prioritize page elements based on user needs.
+        &#149; Prototypes: Samples or simulations of final products used for testing and gathering feedback. Low-fidelity prototypes 
+        might be sketched on paper, while high-fidelity prototypes allow for mouse and keyboard interaction.
+        &#149; Mockups: Realistic visual models of what a final webpage or application will look like.
+        &#149;  User Flows: Diagrams that map out each step a user takes when using a product or service.
+      2. UX Research Skills:
+        &#149; The ability to gather qualitative and quantitative data about users through research and analysis.
+      3. Creativity and Visual Design Skills:
+        &#149; A keen eye for aesthetics, layout, and visual appeal.
+      4. Interaction Design:
+        &#149; Crafting seamless and intuitive interactions between users and digital products.
+      5. Knowledge of Accessible Design Principles:
+        &#149; Ensuring that designs are inclusive and usable by all, including people with disabilities.
+      6. Information Architecture:
+        &#149; Organizing and structuring content to enhance user navigation.
+      7. UX Writing:
+        &#149; Crafting clear, concise, and user-friendly text within interfaces.
+      8. Proficiency in UI/UX Design Tools:
+        &#149; Familiarity with tools like InVision, Sketch, Adobe XD, and Origami Studio for creating prototypes and mockups.
+Remember that UX design also involves soft skills like empathy, collaboration, and critical thinking. These skills, combined with technical expertise, will help you create frictionless user experiences that meet real user needs. Happy designing! 🎨✨
+If you’re ready to learn more about UX design, consider advancing your skills with the Google UX Design Professional Certificate. You’ll learn how to build wireframes, conduct user research, and create dynamic user interfaces for websites!.</textarea>
             <div class="review d-none">
               <button class="btn copy-btn" type="button">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -505,7 +578,7 @@
             </div>
           </div>
         </form>
-        <div class="tab-filter">
+        <div class="tab-filter" id="generate_tab-2">
           <div class="filter-item">
             <label for="">industry (optional)</label>
             <div class="form-group"> 
@@ -531,7 +604,7 @@
           </div>
           <div class="filter-item" style="border-right: 0;">
             <label for="">country (optional)</label>
-            <form class="ml-auto">
+            <form>
               <div class="form-group"> 
                 <select class="form-control">
                   <option value="none">None</option>
@@ -546,8 +619,28 @@
               </div>
             </form>
           </div>
-          <div class="btn-loading">
+          <div class="btn-loading" id="generate">
             <a href="#!" type="button">Generate</a>
+          </div>
+        </div>
+        <div class="tab-filter d-none" id="generated_tab-2">
+          <div class="filter-item border-0">
+            <p class="card-text">
+              skill: 5
+            </p>
+          </div>
+          <div class="filter-item border-0">
+            <p class="card-text">
+              characters: 8
+            </p>
+          </div>
+          <div class="filter-item border-0" style="border-right: 0;">
+            <p class="card-text">
+              words: 8
+            </p>
+          </div>
+          <div class="btn-loading" id="regenerate">
+            <a href="#!" type="button">Regenerate</a>
           </div>
         </div>
 
@@ -568,7 +661,11 @@
             <h5>Job Qualifications</h5>
             <p>Enter a job title to generate a list of skills</p>
           </div>
-          <form class="ml-auto">
+          <button class="btn btn-light btn-new-gen ml-auto d-none">
+            <img src="img/new-gen.svg" alt="">
+            Start new generate
+          </button>
+          <form class="ml-auto btn-formal">
             <div class="form-group"> 
               <select class="form-control">
                 <option value="formal">👔 Formal</option>
@@ -581,7 +678,31 @@
         </div>
         <form class="tab-text-area">
           <div class="form-group">
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="11" placeholder="Enter a job title (required), industry, years of experience and country (optional)"></textarea>
+            <textarea class="form-control generate-text-area" id="exampleFormControlTextareaQual" rows="11" placeholder="Enter a job title (required), industry, years of experience and country (optional)"></textarea>
+            <textarea class="form-control generated-text-area d-none" id="exampleFormControlTextarea2" rows="11">
+  Certainly! As a UI/UX designer, there are several essential skills you’ll need to excel in your field. Let’s explore these skills:
+      1. Prototyping, Wireframing, User Flows, and Mockups:
+        &#149; Wireframes: These are web page layouts stripped of visual design, used to prioritize page elements based on user needs.
+        &#149; Prototypes: Samples or simulations of final products used for testing and gathering feedback. Low-fidelity prototypes 
+        might be sketched on paper, while high-fidelity prototypes allow for mouse and keyboard interaction.
+        &#149; Mockups: Realistic visual models of what a final webpage or application will look like.
+        &#149;  User Flows: Diagrams that map out each step a user takes when using a product or service.
+      2. UX Research Skills:
+        &#149; The ability to gather qualitative and quantitative data about users through research and analysis.
+      3. Creativity and Visual Design Skills:
+        &#149; A keen eye for aesthetics, layout, and visual appeal.
+      4. Interaction Design:
+        &#149; Crafting seamless and intuitive interactions between users and digital products.
+      5. Knowledge of Accessible Design Principles:
+        &#149; Ensuring that designs are inclusive and usable by all, including people with disabilities.
+      6. Information Architecture:
+        &#149; Organizing and structuring content to enhance user navigation.
+      7. UX Writing:
+        &#149; Crafting clear, concise, and user-friendly text within interfaces.
+      8. Proficiency in UI/UX Design Tools:
+        &#149; Familiarity with tools like InVision, Sketch, Adobe XD, and Origami Studio for creating prototypes and mockups.
+Remember that UX design also involves soft skills like empathy, collaboration, and critical thinking. These skills, combined with technical expertise, will help you create frictionless user experiences that meet real user needs. Happy designing! 🎨✨
+If you’re ready to learn more about UX design, consider advancing your skills with the Google UX Design Professional Certificate. You’ll learn how to build wireframes, conduct user research, and create dynamic user interfaces for websites!.</textarea>
             <div class="review d-none">
               <button class="btn copy-btn" type="button">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -637,7 +758,7 @@
             </div>
           </div>
         </form>
-        <div class="tab-filter">
+        <div class="tab-filter" id="generate_tab-3">
           <div class="filter-item">
             <label for="">industry (optional)</label>
             <div class="form-group"> 
@@ -663,7 +784,7 @@
           </div>
           <div class="filter-item" style="border-right: 0;">
             <label for="">country (optional)</label>
-            <form class="ml-auto">
+            <form>
               <div class="form-group"> 
                 <select class="form-control">
                   <option value="none">None</option>
@@ -680,6 +801,26 @@
           </div>
           <div class="btn-loading" id="generate">
             <a href="#!" type="button">Generate</a>
+          </div>
+        </div>
+        <div class="tab-filter d-none" id="generated_tab-3">
+          <div class="filter-item border-0">
+            <p class="card-text">
+              skill: 5
+            </p>
+          </div>
+          <div class="filter-item border-0">
+            <p class="card-text">
+              characters: 8
+            </p>
+          </div>
+          <div class="filter-item border-0" style="border-right: 0;">
+            <p class="card-text">
+              words: 8
+            </p>
+          </div>
+          <div class="btn-loading" id="regenerate">
+            <a href="#!" type="button">Regenerate</a>
           </div>
         </div>
 
@@ -700,7 +841,11 @@
             <h5>Job Description</h5>
             <p>Enter bullet points such as title, skills, years of experience, industry, country.</p>
           </div>
-          <form class="ml-auto">
+          <button class="btn btn-light btn-new-gen ml-auto d-none">
+            <img src="img/new-gen.svg" alt="">
+            Start new generate
+          </button>
+          <form class="ml-auto btn-formal">
             <div class="form-group"> 
               <select class="form-control">
                 <option value="formal">👔 Formal</option>
@@ -713,7 +858,7 @@
         </div>
         <form class="tab-text-area">
           <div class="form-group">
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="11" placeholder="&#149; Enter a job title
+            <textarea class="form-control generate-text-area" id="exampleFormControlTextareaDescr" rows="11" placeholder="&#149; Enter a job title
 &#149; Enter a skills
 &#149; Enter years of experience
 &#149; Enter a industry
@@ -773,7 +918,7 @@
             </div>
           </div>
         </form>
-        <div class="tab-filter">
+        <div class="tab-filter" id="generate_tab-4">
           <div class="filter-item">
             <label for="">industry (optional)</label>
             <div class="form-group"> 
@@ -799,7 +944,7 @@
           </div>
           <div class="filter-item" style="border-right: 0;">
             <label for="">country (optional)</label>
-            <form class="ml-auto">
+            <form>
               <div class="form-group"> 
                 <select class="form-control">
                   <option value="none">None</option>
@@ -816,6 +961,26 @@
           </div>
           <div class="btn-loading" id="generate">
             <a href="#!" type="button">Generate</a>
+          </div>
+        </div>
+        <div class="tab-filter d-none" id="generated_tab-4">
+          <div class="filter-item border-0">
+            <p class="card-text">
+              skill: 5
+            </p>
+          </div>
+          <div class="filter-item border-0">
+            <p class="card-text">
+              characters: 8
+            </p>
+          </div>
+          <div class="filter-item border-0" style="border-right: 0;">
+            <p class="card-text">
+              words: 8
+            </p>
+          </div>
+          <div class="btn-loading" id="regenerate">
+            <a href="#!" type="button">Regenerate</a>
           </div>
         </div>
 
@@ -836,7 +1001,11 @@
             <h5>Job Description Rewriter</h5>
             <p>Enter a full job description, and AI will rewrite it</p>
           </div>
-          <form class="ml-auto">
+          <button class="btn btn-light btn-new-gen ml-auto d-none">
+            <img src="img/new-gen.svg" alt="">
+            Start new generate
+          </button>
+          <form class="ml-auto btn-formal">
             <div class="form-group"> 
               <select class="form-control">
                 <option value="formal">👔 Formal</option>
@@ -849,7 +1018,31 @@
         </div>
         <form class="tab-text-area">
           <div class="form-group">
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="11" placeholder="Enter a full job description"></textarea>
+            <textarea class="form-control generate-text-area" id="exampleFormControlTextareaRewriter" rows="11" placeholder="Enter a full job description"></textarea>
+            <textarea class="form-control generated-text-area d-none" id="exampleFormControlTextarea2" rows="11">
+  Certainly! As a UI/UX designer, there are several essential skills you’ll need to excel in your field. Let’s explore these skills:
+      1. Prototyping, Wireframing, User Flows, and Mockups:
+        &#149; Wireframes: These are web page layouts stripped of visual design, used to prioritize page elements based on user needs.
+        &#149; Prototypes: Samples or simulations of final products used for testing and gathering feedback. Low-fidelity prototypes 
+        might be sketched on paper, while high-fidelity prototypes allow for mouse and keyboard interaction.
+        &#149; Mockups: Realistic visual models of what a final webpage or application will look like.
+        &#149;  User Flows: Diagrams that map out each step a user takes when using a product or service.
+      2. UX Research Skills:
+        &#149; The ability to gather qualitative and quantitative data about users through research and analysis.
+      3. Creativity and Visual Design Skills:
+        &#149; A keen eye for aesthetics, layout, and visual appeal.
+      4. Interaction Design:
+        &#149; Crafting seamless and intuitive interactions between users and digital products.
+      5. Knowledge of Accessible Design Principles:
+        &#149; Ensuring that designs are inclusive and usable by all, including people with disabilities.
+      6. Information Architecture:
+        &#149; Organizing and structuring content to enhance user navigation.
+      7. UX Writing:
+        &#149; Crafting clear, concise, and user-friendly text within interfaces.
+      8. Proficiency in UI/UX Design Tools:
+        &#149; Familiarity with tools like InVision, Sketch, Adobe XD, and Origami Studio for creating prototypes and mockups.
+Remember that UX design also involves soft skills like empathy, collaboration, and critical thinking. These skills, combined with technical expertise, will help you create frictionless user experiences that meet real user needs. Happy designing! 🎨✨
+If you’re ready to learn more about UX design, consider advancing your skills with the Google UX Design Professional Certificate. You’ll learn how to build wireframes, conduct user research, and create dynamic user interfaces for websites!.</textarea>
             <div class="review d-none">
               <button class="btn copy-btn">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -905,7 +1098,7 @@
             </div>
           </div>
         </form>
-        <div class="tab-filter">
+        <div class="tab-filter" id="generate_tab-5">
           <div class="filter-item">
             <label for="">industry (optional)</label>
             <div class="form-group"> 
@@ -931,7 +1124,7 @@
           </div>
           <div class="filter-item" style="border-right: 0;">
             <label for="">country (optional)</label>
-            <form class="ml-auto">
+            <form>
               <div class="form-group"> 
                 <select class="form-control">
                   <option value="none">None</option>
@@ -950,9 +1143,29 @@
             <a href="#!" type="button">Generate</a>
           </div>
         </div>
+        <div class="tab-filter d-none" id="generated_tab-5">
+          <div class="filter-item border-0">
+            <p class="card-text">
+              skill: 5
+            </p>
+          </div>
+          <div class="filter-item border-0">
+            <p class="card-text">
+              characters: 8
+            </p>
+          </div>
+          <div class="filter-item border-0" style="border-right: 0;">
+            <p class="card-text">
+              words: 8
+            </p>
+          </div>
+          <div class="btn-loading" id="regenerate">
+            <a href="#!" type="button">Regenerate</a>
+          </div>
+        </div>
 
 
-        <!-- Fivth Tab Window Start -->
+        <!-- Fivth Tab Window End -->
 
 
       </div>
@@ -1071,7 +1284,6 @@
   <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/page-scroll-to-id@1.6.8/jquery.malihu.PageScroll2id.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js" integrity="sha512-p7Ey2nBhKYEi9yh0iDs+GMA0ttebOqVl3OO2oWRzRxtDoN/RedyYcHFUJZhMVi8NKRdEA7n+9NTNQX/kFIZgNw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="js/common.js"></script>
