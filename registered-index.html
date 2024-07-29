@@ -372,7 +372,7 @@
           <div class="form-group">
             <textarea class="form-control" id="exampleFormControlTextarea1" rows="11" placeholder="Enter a job title (required), industry, years of experience and country (optional)"></textarea>
             <div class="review d-none">
-              <button class="btn copy-btn">
+              <button class="btn copy-btn" type="button">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g clip-path="url(#clip0_11554_5802)">
                   <path d="M7 9.667C7 8.95967 7.28099 8.28131 7.78115 7.78115C8.28131 7.28099 8.95967 7 9.667 7H18.333C18.6832 7 19.03 7.06898 19.3536 7.20301C19.6772 7.33704 19.9712 7.53349 20.2189 7.78115C20.4665 8.0288 20.663 8.32281 20.797 8.64638C20.931 8.96996 21 9.31676 21 9.667V18.333C21 18.6832 20.931 19.03 20.797 19.3536C20.663 19.6772 20.4665 19.9712 20.2189 20.2189C19.9712 20.4665 19.6772 20.663 19.3536 20.797C19.03 20.931 18.6832 21 18.333 21H9.667C9.31676 21 8.96996 20.931 8.64638 20.797C8.32281 20.663 8.0288 20.4665 7.78115 20.2189C7.53349 19.9712 7.33704 19.6772 7.20301 19.3536C7.06898 19.03 7 18.6832 7 18.333V9.667Z" stroke="#9C91B4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
@@ -385,16 +385,44 @@
                 </defs>
               </svg>
               </button>
-              <button class="btn like-btn">
+              <button class="btn like-btn" type="button">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M7 11V19C7 19.2652 6.89464 19.5196 6.70711 19.7071C6.51957 19.8946 6.26522 20 6 20H4C3.73478 20 3.48043 19.8946 3.29289 19.7071C3.10536 19.5196 3 19.2652 3 19V12C3 11.7348 3.10536 11.4804 3.29289 11.2929C3.48043 11.1054 3.73478 11 4 11H7ZM7 11C8.06087 11 9.07828 10.5786 9.82843 9.82843C10.5786 9.07828 11 8.06087 11 7V6C11 5.46957 11.2107 4.96086 11.5858 4.58579C11.9609 4.21071 12.4696 4 13 4C13.5304 4 14.0391 4.21071 14.4142 4.58579C14.7893 4.96086 15 5.46957 15 6V11H18C18.5304 11 19.0391 11.2107 19.4142 11.5858C19.7893 11.9609 20 12.4696 20 13L19 18C18.8562 18.6135 18.5834 19.1402 18.2227 19.501C17.8619 19.8617 17.4328 20.0368 17 20H10C9.20435 20 8.44129 19.6839 7.87868 19.1213C7.31607 18.5587 7 17.7956 7 17" stroke="#9C91B4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                 </svg>
               </button>
-              <button class="btn dislike-btn">
+              <button class="btn dislike-btn" type="button">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M7 12.9999V4.99993C7 4.73472 6.89464 4.48036 6.70711 4.29283C6.51957 4.10529 6.26522 3.99993 6 3.99993H4C3.73478 3.99993 3.48043 4.10529 3.29289 4.29283C3.10536 4.48036 3 4.73472 3 4.99993V11.9999C3 12.2651 3.10536 12.5195 3.29289 12.707C3.48043 12.8946 3.73478 12.9999 4 12.9999H7ZM7 12.9999C8.06087 12.9999 9.07828 13.4214 9.82843 14.1715C10.5786 14.9217 11 15.9391 11 16.9999V17.9999C11 18.5304 11.2107 19.0391 11.5858 19.4141C11.9609 19.7892 12.4696 19.9999 13 19.9999C13.5304 19.9999 14.0391 19.7892 14.4142 19.4141C14.7893 19.0391 15 18.5304 15 17.9999V12.9999H18C18.5304 12.9999 19.0391 12.7892 19.4142 12.4141C19.7893 12.0391 20 11.5304 20 10.9999L19 5.99993C18.8562 5.38646 18.5834 4.85969 18.2227 4.49897C17.8619 4.13825 17.4328 3.96311 17 3.99993H10C9.20435 3.99993 8.44129 4.316 7.87868 4.87861C7.31607 5.44122 7 6.20428 7 6.99993" stroke="#9C91B4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                 </svg>
               </button>
+            </div>
+            <div class="like-menu d-none flex-column">
+              <textarea class="form-control" rows="2" placeholder="Let us know if you have any additional feedback or suggestions..."></textarea>
+              <div class="d-flex flex-wrap mt-auto">
+                <div class="button-group-pills" data-toggle="buttons">
+                  <label class="btn btn-default">
+                    <input type="checkbox" name="options" checked="">
+                    <div>Don't like this style</div>
+                  </label>
+                  <label class="btn btn-default">
+                    <input type="checkbox" name="options">
+                    <div>Not factually correct</div>
+                  </label>
+                  <label class="btn btn-default">
+                    <input type="checkbox" name="options">
+                    <div>Didn’t fully follow instruction</div>
+                  </label>
+                  <label class="btn btn-default">
+                    <input type="checkbox" name="options">
+                    <div>Refused when it shouldn’t have</div>
+                  </label>
+                  <label class="btn btn-default">
+                    <input type="checkbox" name="options">
+                    <div>Being lazy</div>
+                  </label>
+                </div>
+                <button class="btn close-menu" type="button"><i class="fa-solid fa-xmark"></i></button>
+              </div>
             </div>
           </div>
         </form>
@@ -433,7 +461,7 @@
                   <option value="au">Austria</option>
                   <option value="aus">Australia</option>
                   <option value="uz">Uzbekistan</option>
-                  <option value="gb">Great Britain</option>
+                  <option value="uk">United Kingdom</option>
                   <option value="ua">Ukraine</option>
                 </select>
               </div>
@@ -479,15 +507,57 @@
           <div class="form-group">
             <textarea class="form-control" id="exampleFormControlTextarea1" rows="11" placeholder="Enter a job title (required), industry, years of experience and country (optional)"></textarea>
             <div class="review d-none">
-              <button class="btn">
-                <img src="img/copy.svg" alt="">
+              <button class="btn copy-btn" type="button">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_11554_5802)">
+                  <path d="M7 9.667C7 8.95967 7.28099 8.28131 7.78115 7.78115C8.28131 7.28099 8.95967 7 9.667 7H18.333C18.6832 7 19.03 7.06898 19.3536 7.20301C19.6772 7.33704 19.9712 7.53349 20.2189 7.78115C20.4665 8.0288 20.663 8.32281 20.797 8.64638C20.931 8.96996 21 9.31676 21 9.667V18.333C21 18.6832 20.931 19.03 20.797 19.3536C20.663 19.6772 20.4665 19.9712 20.2189 20.2189C19.9712 20.4665 19.6772 20.663 19.3536 20.797C19.03 20.931 18.6832 21 18.333 21H9.667C9.31676 21 8.96996 20.931 8.64638 20.797C8.32281 20.663 8.0288 20.4665 7.78115 20.2189C7.53349 19.9712 7.33704 19.6772 7.20301 19.3536C7.06898 19.03 7 18.6832 7 18.333V9.667Z" stroke="#9C91B4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M4.012 16.737C3.70534 16.5622 3.45027 16.3095 3.27258 16.0045C3.09488 15.6995 3.00085 15.353 3 15V5C3 3.9 3.9 3 5 3H15C15.75 3 16.158 3.385 16.5 4" stroke="#9C91B4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                </g>
+                <defs>
+                  <clipPath id="clip0_11554_5802">
+                    <rect width="24" height="24" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
               </button>
-              <button class="btn">
-                <img src="img/like.svg" alt="">
+              <button class="btn like-btn" type="button">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M7 11V19C7 19.2652 6.89464 19.5196 6.70711 19.7071C6.51957 19.8946 6.26522 20 6 20H4C3.73478 20 3.48043 19.8946 3.29289 19.7071C3.10536 19.5196 3 19.2652 3 19V12C3 11.7348 3.10536 11.4804 3.29289 11.2929C3.48043 11.1054 3.73478 11 4 11H7ZM7 11C8.06087 11 9.07828 10.5786 9.82843 9.82843C10.5786 9.07828 11 8.06087 11 7V6C11 5.46957 11.2107 4.96086 11.5858 4.58579C11.9609 4.21071 12.4696 4 13 4C13.5304 4 14.0391 4.21071 14.4142 4.58579C14.7893 4.96086 15 5.46957 15 6V11H18C18.5304 11 19.0391 11.2107 19.4142 11.5858C19.7893 11.9609 20 12.4696 20 13L19 18C18.8562 18.6135 18.5834 19.1402 18.2227 19.501C17.8619 19.8617 17.4328 20.0368 17 20H10C9.20435 20 8.44129 19.6839 7.87868 19.1213C7.31607 18.5587 7 17.7956 7 17" stroke="#9C91B4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
               </button>
-              <button class="btn">
-                <img src="img/dislike.svg" alt="">
+              <button class="btn dislike-btn" type="button">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M7 12.9999V4.99993C7 4.73472 6.89464 4.48036 6.70711 4.29283C6.51957 4.10529 6.26522 3.99993 6 3.99993H4C3.73478 3.99993 3.48043 4.10529 3.29289 4.29283C3.10536 4.48036 3 4.73472 3 4.99993V11.9999C3 12.2651 3.10536 12.5195 3.29289 12.707C3.48043 12.8946 3.73478 12.9999 4 12.9999H7ZM7 12.9999C8.06087 12.9999 9.07828 13.4214 9.82843 14.1715C10.5786 14.9217 11 15.9391 11 16.9999V17.9999C11 18.5304 11.2107 19.0391 11.5858 19.4141C11.9609 19.7892 12.4696 19.9999 13 19.9999C13.5304 19.9999 14.0391 19.7892 14.4142 19.4141C14.7893 19.0391 15 18.5304 15 17.9999V12.9999H18C18.5304 12.9999 19.0391 12.7892 19.4142 12.4141C19.7893 12.0391 20 11.5304 20 10.9999L19 5.99993C18.8562 5.38646 18.5834 4.85969 18.2227 4.49897C17.8619 4.13825 17.4328 3.96311 17 3.99993H10C9.20435 3.99993 8.44129 4.316 7.87868 4.87861C7.31607 5.44122 7 6.20428 7 6.99993" stroke="#9C91B4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
               </button>
+            </div>
+            <div class="like-menu d-none flex-column">
+              <textarea class="form-control" rows="2" placeholder="Let us know if you have any additional feedback or suggestions..."></textarea>
+              <div class="d-flex flex-wrap mt-auto">
+                <div class="button-group-pills" data-toggle="buttons">
+                  <label class="btn btn-default">
+                    <input type="checkbox" name="options" checked="">
+                    <div>Don't like this style</div>
+                  </label>
+                  <label class="btn btn-default">
+                    <input type="checkbox" name="options">
+                    <div>Not factually correct</div>
+                  </label>
+                  <label class="btn btn-default">
+                    <input type="checkbox" name="options">
+                    <div>Didn’t fully follow instruction</div>
+                  </label>
+                  <label class="btn btn-default">
+                    <input type="checkbox" name="options">
+                    <div>Refused when it shouldn’t have</div>
+                  </label>
+                  <label class="btn btn-default">
+                    <input type="checkbox" name="options">
+                    <div>Being lazy</div>
+                  </label>
+                </div>
+                <button class="btn close-menu" type="button"><i class="fa-solid fa-xmark"></i></button>
+              </div>
             </div>
           </div>
         </form>
@@ -526,15 +596,15 @@
                   <option value="au">Austria</option>
                   <option value="aus">Australia</option>
                   <option value="uz">Uzbekistan</option>
-                  <option value="gb">Great Britain</option>
+                  <option value="uk">United Kingdom</option>
                   <option value="ua">Ukraine</option>
                 </select>
               </div>
             </form>
           </div>
-          <div class="try-btn">
-            <a href="#!" id="generate">Generate</a>
-          </div>
+          <button class="btn-loading btn" id="generate">
+            <span>Generate</span>
+          </button>
         </div>
 
 
@@ -569,15 +639,57 @@
           <div class="form-group">
             <textarea class="form-control" id="exampleFormControlTextarea1" rows="11" placeholder="Enter a job title (required), industry, years of experience and country (optional)"></textarea>
             <div class="review d-none">
-              <button class="btn">
-                <img src="img/copy.svg" alt="">
+              <button class="btn copy-btn" type="button">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_11554_5802)">
+                  <path d="M7 9.667C7 8.95967 7.28099 8.28131 7.78115 7.78115C8.28131 7.28099 8.95967 7 9.667 7H18.333C18.6832 7 19.03 7.06898 19.3536 7.20301C19.6772 7.33704 19.9712 7.53349 20.2189 7.78115C20.4665 8.0288 20.663 8.32281 20.797 8.64638C20.931 8.96996 21 9.31676 21 9.667V18.333C21 18.6832 20.931 19.03 20.797 19.3536C20.663 19.6772 20.4665 19.9712 20.2189 20.2189C19.9712 20.4665 19.6772 20.663 19.3536 20.797C19.03 20.931 18.6832 21 18.333 21H9.667C9.31676 21 8.96996 20.931 8.64638 20.797C8.32281 20.663 8.0288 20.4665 7.78115 20.2189C7.53349 19.9712 7.33704 19.6772 7.20301 19.3536C7.06898 19.03 7 18.6832 7 18.333V9.667Z" stroke="#9C91B4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M4.012 16.737C3.70534 16.5622 3.45027 16.3095 3.27258 16.0045C3.09488 15.6995 3.00085 15.353 3 15V5C3 3.9 3.9 3 5 3H15C15.75 3 16.158 3.385 16.5 4" stroke="#9C91B4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                </g>
+                <defs>
+                  <clipPath id="clip0_11554_5802">
+                    <rect width="24" height="24" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
               </button>
-              <button class="btn">
-                <img src="img/like.svg" alt="">
+              <button class="btn like-btn" type="button">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M7 11V19C7 19.2652 6.89464 19.5196 6.70711 19.7071C6.51957 19.8946 6.26522 20 6 20H4C3.73478 20 3.48043 19.8946 3.29289 19.7071C3.10536 19.5196 3 19.2652 3 19V12C3 11.7348 3.10536 11.4804 3.29289 11.2929C3.48043 11.1054 3.73478 11 4 11H7ZM7 11C8.06087 11 9.07828 10.5786 9.82843 9.82843C10.5786 9.07828 11 8.06087 11 7V6C11 5.46957 11.2107 4.96086 11.5858 4.58579C11.9609 4.21071 12.4696 4 13 4C13.5304 4 14.0391 4.21071 14.4142 4.58579C14.7893 4.96086 15 5.46957 15 6V11H18C18.5304 11 19.0391 11.2107 19.4142 11.5858C19.7893 11.9609 20 12.4696 20 13L19 18C18.8562 18.6135 18.5834 19.1402 18.2227 19.501C17.8619 19.8617 17.4328 20.0368 17 20H10C9.20435 20 8.44129 19.6839 7.87868 19.1213C7.31607 18.5587 7 17.7956 7 17" stroke="#9C91B4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
               </button>
-              <button class="btn">
-                <img src="img/dislike.svg" alt="">
+              <button class="btn dislike-btn" type="button">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M7 12.9999V4.99993C7 4.73472 6.89464 4.48036 6.70711 4.29283C6.51957 4.10529 6.26522 3.99993 6 3.99993H4C3.73478 3.99993 3.48043 4.10529 3.29289 4.29283C3.10536 4.48036 3 4.73472 3 4.99993V11.9999C3 12.2651 3.10536 12.5195 3.29289 12.707C3.48043 12.8946 3.73478 12.9999 4 12.9999H7ZM7 12.9999C8.06087 12.9999 9.07828 13.4214 9.82843 14.1715C10.5786 14.9217 11 15.9391 11 16.9999V17.9999C11 18.5304 11.2107 19.0391 11.5858 19.4141C11.9609 19.7892 12.4696 19.9999 13 19.9999C13.5304 19.9999 14.0391 19.7892 14.4142 19.4141C14.7893 19.0391 15 18.5304 15 17.9999V12.9999H18C18.5304 12.9999 19.0391 12.7892 19.4142 12.4141C19.7893 12.0391 20 11.5304 20 10.9999L19 5.99993C18.8562 5.38646 18.5834 4.85969 18.2227 4.49897C17.8619 4.13825 17.4328 3.96311 17 3.99993H10C9.20435 3.99993 8.44129 4.316 7.87868 4.87861C7.31607 5.44122 7 6.20428 7 6.99993" stroke="#9C91B4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
               </button>
+            </div>
+            <div class="like-menu d-none flex-column">
+              <textarea class="form-control" rows="2" placeholder="Let us know if you have any additional feedback or suggestions..."></textarea>
+              <div class="d-flex flex-wrap mt-auto">
+                <div class="button-group-pills" data-toggle="buttons">
+                  <label class="btn btn-default">
+                    <input type="checkbox" name="options" checked="">
+                    <div>Don't like this style</div>
+                  </label>
+                  <label class="btn btn-default">
+                    <input type="checkbox" name="options">
+                    <div>Not factually correct</div>
+                  </label>
+                  <label class="btn btn-default">
+                    <input type="checkbox" name="options">
+                    <div>Didn’t fully follow instruction</div>
+                  </label>
+                  <label class="btn btn-default">
+                    <input type="checkbox" name="options">
+                    <div>Refused when it shouldn’t have</div>
+                  </label>
+                  <label class="btn btn-default">
+                    <input type="checkbox" name="options">
+                    <div>Being lazy</div>
+                  </label>
+                </div>
+                <button class="btn close-menu" type="button"><i class="fa-solid fa-xmark"></i></button>
+              </div>
             </div>
           </div>
         </form>
@@ -616,14 +728,14 @@
                   <option value="au">Austria</option>
                   <option value="aus">Australia</option>
                   <option value="uz">Uzbekistan</option>
-                  <option value="gb">Great Britain</option>
+                  <option value="uk">United Kingdom</option>
                   <option value="ua">Ukraine</option>
                 </select>
               </div>
             </form>
           </div>
-          <div class="try-btn">
-            <a href="#!" id="generate">Generate</a>
+          <div class="btn-loading" id="generate">
+            <a href="#!" type="button">Generate</a>
           </div>
         </div>
 
@@ -663,15 +775,57 @@
 &#149; Enter a industry
 &#149; Enter a country"></textarea>
             <div class="review d-none">
-              <button class="btn">
-                <img src="img/copy.svg" alt="">
+              <button class="btn copy-btn" type="button">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_11554_5802)">
+                  <path d="M7 9.667C7 8.95967 7.28099 8.28131 7.78115 7.78115C8.28131 7.28099 8.95967 7 9.667 7H18.333C18.6832 7 19.03 7.06898 19.3536 7.20301C19.6772 7.33704 19.9712 7.53349 20.2189 7.78115C20.4665 8.0288 20.663 8.32281 20.797 8.64638C20.931 8.96996 21 9.31676 21 9.667V18.333C21 18.6832 20.931 19.03 20.797 19.3536C20.663 19.6772 20.4665 19.9712 20.2189 20.2189C19.9712 20.4665 19.6772 20.663 19.3536 20.797C19.03 20.931 18.6832 21 18.333 21H9.667C9.31676 21 8.96996 20.931 8.64638 20.797C8.32281 20.663 8.0288 20.4665 7.78115 20.2189C7.53349 19.9712 7.33704 19.6772 7.20301 19.3536C7.06898 19.03 7 18.6832 7 18.333V9.667Z" stroke="#9C91B4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M4.012 16.737C3.70534 16.5622 3.45027 16.3095 3.27258 16.0045C3.09488 15.6995 3.00085 15.353 3 15V5C3 3.9 3.9 3 5 3H15C15.75 3 16.158 3.385 16.5 4" stroke="#9C91B4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                </g>
+                <defs>
+                  <clipPath id="clip0_11554_5802">
+                    <rect width="24" height="24" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
               </button>
-              <button class="btn">
-                <img src="img/like.svg" alt="">
+              <button class="btn like-btn" type="button">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M7 11V19C7 19.2652 6.89464 19.5196 6.70711 19.7071C6.51957 19.8946 6.26522 20 6 20H4C3.73478 20 3.48043 19.8946 3.29289 19.7071C3.10536 19.5196 3 19.2652 3 19V12C3 11.7348 3.10536 11.4804 3.29289 11.2929C3.48043 11.1054 3.73478 11 4 11H7ZM7 11C8.06087 11 9.07828 10.5786 9.82843 9.82843C10.5786 9.07828 11 8.06087 11 7V6C11 5.46957 11.2107 4.96086 11.5858 4.58579C11.9609 4.21071 12.4696 4 13 4C13.5304 4 14.0391 4.21071 14.4142 4.58579C14.7893 4.96086 15 5.46957 15 6V11H18C18.5304 11 19.0391 11.2107 19.4142 11.5858C19.7893 11.9609 20 12.4696 20 13L19 18C18.8562 18.6135 18.5834 19.1402 18.2227 19.501C17.8619 19.8617 17.4328 20.0368 17 20H10C9.20435 20 8.44129 19.6839 7.87868 19.1213C7.31607 18.5587 7 17.7956 7 17" stroke="#9C91B4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
               </button>
-              <button class="btn">
-                <img src="img/dislike.svg" alt="">
+              <button class="btn dislike-btn" type="button">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M7 12.9999V4.99993C7 4.73472 6.89464 4.48036 6.70711 4.29283C6.51957 4.10529 6.26522 3.99993 6 3.99993H4C3.73478 3.99993 3.48043 4.10529 3.29289 4.29283C3.10536 4.48036 3 4.73472 3 4.99993V11.9999C3 12.2651 3.10536 12.5195 3.29289 12.707C3.48043 12.8946 3.73478 12.9999 4 12.9999H7ZM7 12.9999C8.06087 12.9999 9.07828 13.4214 9.82843 14.1715C10.5786 14.9217 11 15.9391 11 16.9999V17.9999C11 18.5304 11.2107 19.0391 11.5858 19.4141C11.9609 19.7892 12.4696 19.9999 13 19.9999C13.5304 19.9999 14.0391 19.7892 14.4142 19.4141C14.7893 19.0391 15 18.5304 15 17.9999V12.9999H18C18.5304 12.9999 19.0391 12.7892 19.4142 12.4141C19.7893 12.0391 20 11.5304 20 10.9999L19 5.99993C18.8562 5.38646 18.5834 4.85969 18.2227 4.49897C17.8619 4.13825 17.4328 3.96311 17 3.99993H10C9.20435 3.99993 8.44129 4.316 7.87868 4.87861C7.31607 5.44122 7 6.20428 7 6.99993" stroke="#9C91B4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
               </button>
+            </div>
+            <div class="like-menu d-none flex-column">
+              <textarea class="form-control" rows="2" placeholder="Let us know if you have any additional feedback or suggestions..."></textarea>
+              <div class="d-flex flex-wrap mt-auto">
+                <div class="button-group-pills" data-toggle="buttons">
+                  <label class="btn btn-default">
+                    <input type="checkbox" name="options" checked="">
+                    <div>Don't like this style</div>
+                  </label>
+                  <label class="btn btn-default">
+                    <input type="checkbox" name="options">
+                    <div>Not factually correct</div>
+                  </label>
+                  <label class="btn btn-default">
+                    <input type="checkbox" name="options">
+                    <div>Didn’t fully follow instruction</div>
+                  </label>
+                  <label class="btn btn-default">
+                    <input type="checkbox" name="options">
+                    <div>Refused when it shouldn’t have</div>
+                  </label>
+                  <label class="btn btn-default">
+                    <input type="checkbox" name="options">
+                    <div>Being lazy</div>
+                  </label>
+                </div>
+                <button class="btn close-menu" type="button"><i class="fa-solid fa-xmark"></i></button>
+              </div>
             </div>
           </div>
         </form>
@@ -710,14 +864,14 @@
                   <option value="au">Austria</option>
                   <option value="aus">Australia</option>
                   <option value="uz">Uzbekistan</option>
-                  <option value="gb">Great Britain</option>
+                  <option value="uk">United Kingdom</option>
                   <option value="ua">Ukraine</option>
                 </select>
               </div>
             </form>
           </div>
-          <div class="try-btn">
-            <a href="#!" id="generate">Generate</a>
+          <div class="btn-loading" id="generate">
+            <a href="#!" type="button">Generate</a>
           </div>
         </div>
 
@@ -753,15 +907,57 @@
             <textarea class="form-control" id="exampleFormControlTextarea1" rows="11" placeholder="Enter a full job description"></textarea>
             <div class="review">
               <div class="review d-none">
-              <button class="btn">
-                <img src="img/copy.svg" alt="">
-              </button>
-              <button class="btn">
-                <img src="img/like.svg" alt="">
-              </button>
-              <button class="btn">
-                <img src="img/dislike.svg" alt="">
-              </button>
+                <button class="btn copy-btn" type="button">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0_11554_5802)">
+                    <path d="M7 9.667C7 8.95967 7.28099 8.28131 7.78115 7.78115C8.28131 7.28099 8.95967 7 9.667 7H18.333C18.6832 7 19.03 7.06898 19.3536 7.20301C19.6772 7.33704 19.9712 7.53349 20.2189 7.78115C20.4665 8.0288 20.663 8.32281 20.797 8.64638C20.931 8.96996 21 9.31676 21 9.667V18.333C21 18.6832 20.931 19.03 20.797 19.3536C20.663 19.6772 20.4665 19.9712 20.2189 20.2189C19.9712 20.4665 19.6772 20.663 19.3536 20.797C19.03 20.931 18.6832 21 18.333 21H9.667C9.31676 21 8.96996 20.931 8.64638 20.797C8.32281 20.663 8.0288 20.4665 7.78115 20.2189C7.53349 19.9712 7.33704 19.6772 7.20301 19.3536C7.06898 19.03 7 18.6832 7 18.333V9.667Z" stroke="#9C91B4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M4.012 16.737C3.70534 16.5622 3.45027 16.3095 3.27258 16.0045C3.09488 15.6995 3.00085 15.353 3 15V5C3 3.9 3.9 3 5 3H15C15.75 3 16.158 3.385 16.5 4" stroke="#9C91B4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_11554_5802">
+                      <rect width="24" height="24" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+                </button>
+                <button class="btn like-btn" type="button">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7 11V19C7 19.2652 6.89464 19.5196 6.70711 19.7071C6.51957 19.8946 6.26522 20 6 20H4C3.73478 20 3.48043 19.8946 3.29289 19.7071C3.10536 19.5196 3 19.2652 3 19V12C3 11.7348 3.10536 11.4804 3.29289 11.2929C3.48043 11.1054 3.73478 11 4 11H7ZM7 11C8.06087 11 9.07828 10.5786 9.82843 9.82843C10.5786 9.07828 11 8.06087 11 7V6C11 5.46957 11.2107 4.96086 11.5858 4.58579C11.9609 4.21071 12.4696 4 13 4C13.5304 4 14.0391 4.21071 14.4142 4.58579C14.7893 4.96086 15 5.46957 15 6V11H18C18.5304 11 19.0391 11.2107 19.4142 11.5858C19.7893 11.9609 20 12.4696 20 13L19 18C18.8562 18.6135 18.5834 19.1402 18.2227 19.501C17.8619 19.8617 17.4328 20.0368 17 20H10C9.20435 20 8.44129 19.6839 7.87868 19.1213C7.31607 18.5587 7 17.7956 7 17" stroke="#9C91B4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </button>
+                <button class="btn dislike-btn" type="button">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7 12.9999V4.99993C7 4.73472 6.89464 4.48036 6.70711 4.29283C6.51957 4.10529 6.26522 3.99993 6 3.99993H4C3.73478 3.99993 3.48043 4.10529 3.29289 4.29283C3.10536 4.48036 3 4.73472 3 4.99993V11.9999C3 12.2651 3.10536 12.5195 3.29289 12.707C3.48043 12.8946 3.73478 12.9999 4 12.9999H7ZM7 12.9999C8.06087 12.9999 9.07828 13.4214 9.82843 14.1715C10.5786 14.9217 11 15.9391 11 16.9999V17.9999C11 18.5304 11.2107 19.0391 11.5858 19.4141C11.9609 19.7892 12.4696 19.9999 13 19.9999C13.5304 19.9999 14.0391 19.7892 14.4142 19.4141C14.7893 19.0391 15 18.5304 15 17.9999V12.9999H18C18.5304 12.9999 19.0391 12.7892 19.4142 12.4141C19.7893 12.0391 20 11.5304 20 10.9999L19 5.99993C18.8562 5.38646 18.5834 4.85969 18.2227 4.49897C17.8619 4.13825 17.4328 3.96311 17 3.99993H10C9.20435 3.99993 8.44129 4.316 7.87868 4.87861C7.31607 5.44122 7 6.20428 7 6.99993" stroke="#9C91B4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </button>
+              </div>
+              <div class="like-menu d-none flex-column">
+              <textarea class="form-control" rows="2" placeholder="Let us know if you have any additional feedback or suggestions..."></textarea>
+              <div class="d-flex flex-wrap mt-auto">
+                <div class="button-group-pills" data-toggle="buttons">
+                  <label class="btn btn-default">
+                    <input type="checkbox" name="options" checked="">
+                    <div>Don't like this style</div>
+                  </label>
+                  <label class="btn btn-default">
+                    <input type="checkbox" name="options">
+                    <div>Not factually correct</div>
+                  </label>
+                  <label class="btn btn-default">
+                    <input type="checkbox" name="options">
+                    <div>Didn’t fully follow instruction</div>
+                  </label>
+                  <label class="btn btn-default">
+                    <input type="checkbox" name="options">
+                    <div>Refused when it shouldn’t have</div>
+                  </label>
+                  <label class="btn btn-default">
+                    <input type="checkbox" name="options">
+                    <div>Being lazy</div>
+                  </label>
+                </div>
+                <button class="btn close-menu" type="button"><i class="fa-solid fa-xmark"></i></button>
+              </div>
             </div>
             </div>
           </div>
@@ -801,14 +997,14 @@
                   <option value="au">Austria</option>
                   <option value="aus">Australia</option>
                   <option value="uz">Uzbekistan</option>
-                  <option value="gb">Great Britain</option>
+                  <option value="uk">United Kingdom</option>
                   <option value="ua">Ukraine</option>
                 </select>
               </div>
             </form>
           </div>
-          <div class="try-btn">
-            <a href="#!" id="generate">Generate</a>
+          <div class="btn-loading" id="generate">
+            <a href="#!" type="button">Generate</a>
           </div>
         </div>
 

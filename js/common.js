@@ -41,6 +41,10 @@ $(".toggle-password").click(function() {
     $("body").toggleClass("mobile");
   });
 
+  // $(".dropdown-toggle-inside").on("click", function() {
+  //   $(".dropdown-menu-inside").toggleClass("active");
+  // });
+
 // Review-menu-logic
 
   $(".like-btn, .dislike-btn").on("click", function() {
@@ -52,7 +56,7 @@ $(".toggle-password").click(function() {
     $('.like-menu').removeClass('d-flex')
     $(".like-menu").addClass("d-none");
   });
-
+  
  })
 
 const button = document.querySelector('.btn-loading', '.btn-loading-2')
