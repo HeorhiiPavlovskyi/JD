@@ -1240,7 +1240,8 @@ select::-ms-expand {
         .contacts-wrapper .contacts-banner ul {
           padding-left: 14px; } }
     .contacts-wrapper .contacts-banner ul a {
-      color: #fff; }
+      color: #fff;
+      transition: 0.3s; }
 
 .blog-bg {
   background-image: url(../img/contact-us-bg.svg);
