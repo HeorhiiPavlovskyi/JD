@@ -1,0 +1,876 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>JobDescription</title>
+    <link rel="icon" type="image/x-icon" href="img/">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+    <link href="/path/to/evk_calendar_jk.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css">
+
+
+</head>
+<body class="history-page">
+
+
+  <!-- start left menu -->
+
+  <aside class="history">
+    <a href="index.html" class="align-self-center">
+      <img src="img/logo-history.svg" alt="">
+    </a>
+    <p class="subtitle">
+      history
+    </p>
+    <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+      <li class="nav-item">
+        <a class="nav-link active" id="pills-jskills-tab" data-toggle="pill" href="#pills-jskills" role="tab" aria-controls="pills-jskills" aria-selected="true" type="button">Job Skills</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="pills-jrespons-tab" data-toggle="pill" href="#pills-jrespons" role="tab" aria-controls="pills-jrespons" aria-selected="false" type="button">Job Responsibility</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="pills-jqual-tab" data-toggle="pill" href="#pills-jqual" role="tab" aria-controls="pills-jqual" aria-selected="false" type="button">Job Qualifications</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="pills-jdescr-tab" data-toggle="pill" href="#pills-jdescr" role="tab" aria-controls="pills-jdescr" aria-selected="false" type="button">Job Description</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="pills-jrewriter-tab" data-toggle="pill" href="#pills-jrewriter" role="tab" aria-controls="pills-jrewriter" aria-selected="false" type="button">Job Description Rewriter</a>
+      </li>
+    </ul>
+    <div class="profile-history">
+      <img src="img/avatar.webp" alt="">
+      <div class="ml-2">
+        <h6>Anna Bronte</h6>
+        <span class="card-text">annabronte@gmail.com</span>
+      </div>
+    </div>
+  </aside>
+
+  <!-- End left menu -->
+
+
+
+  <!-- all content block start -->
+
+  <div class="history-content">
+    
+    <div class="tab-content" id="pills-tabContent">
+
+
+      <!-- Job Skill block start -->
+
+
+      <div class="tab-pane fade show active" id="pills-jskills" role="tabpanel" aria-labelledby="pills-jskills-tab">
+        <div class="history-title">
+          <h3>Job Skills</h3>
+          <div class="search ml-auto mr-3">
+            <input type="text" class="search-field" placeholder="Search here">
+            <img src="img/search.svg" alt="" class="search-icon">
+          </div>
+
+          <!-- SIMPLE CALENDAR -->
+
+          <div class="position-relative">
+            <div class="history-calendar">
+              Friday 8 Dec, 2023
+            </div>
+            <div id="datepicker" class="calendar">
+              <div class="ui-datepicker-inline ui-datepicker ui-widget ui-widget-content ui-helper-clearfix ui-corner-all" style="display: block;">
+                <div class="ui-datepicker-header ui-widget-header ui-helper-clearfix ui-corner-all">
+                  <a class="ui-datepicker-prev ui-corner-all" data-handler="prev" data-event="click" title="Prev">
+                    <span class="ui-icon ui-icon-circle-triangle-w">Prev</span>
+                  </a>
+                  <a class="ui-datepicker-next ui-corner-all" data-handler="next" data-event="click" title="Next">
+                    <span class="ui-icon ui-icon-circle-triangle-e">Next</span>
+                  </a>
+                  <div class="ui-datepicker-title">
+                    <span class="ui-datepicker-month">July</span>
+                    &nbsp;<span class="ui-datepicker-year">2024</span>
+                  </div>
+                </div>
+                <table class="ui-datepicker-calendar">
+                  <thead>
+                    <tr>
+                      <th>
+                        <span title="Monday">Mo</span>
+                      </th>
+                      <th>
+                        <span title="Tuesday">Tu</span>
+                      </th>
+                      <th>
+                        <span title="Wednesday">We</span>
+                      </th>
+                      <th>
+                        <span title="Thursday">Th</span>
+                      </th>
+                      <th>
+                        <span title="Friday">Fr</span>
+                      </th>
+                      <th class="ui-datepicker-week-end">
+                        <span title="Saturday">Sa</span>
+                      </th>
+                      <th class="ui-datepicker-week-end">
+                        <span title="Sunday">Su</span>
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class=" " data-handler="selectDay" data-event="click" data-month="6" data-year="2024">
+                        <a class="ui-state-default" href="#">1</a>
+                      </td>
+                      <td class=" " data-handler="selectDay" data-event="click" data-month="6" data-year="2024">
+                        <a class="ui-state-default" href="#">2</a>
+                      </td>
+                      <td class=" " data-handler="selectDay" data-event="click" data-month="6" data-year="2024">
+                        <a class="ui-state-default" href="#">3</a>
+                      </td>
+                      <td class=" " data-handler="selectDay" data-event="click" data-month="6" data-year="2024">
+                        <a class="ui-state-default" href="#">4</a>
+                      </td>
+                      <td class=" " data-handler="selectDay" data-event="click" data-month="6" data-year="2024">
+                        <a class="ui-state-default" href="#">5</a>
+                      </td>
+                      <td class=" ui-datepicker-week-end " data-handler="selectDay" data-event="click" data-month="6" data-year="2024">
+                        <a class="ui-state-default" href="#">6</a>
+                      </td>
+                      <td class=" ui-datepicker-week-end " data-handler="selectDay" data-event="click" data-month="6" data-year="2024">
+                        <a class="ui-state-default" href="#">7</a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class=" " data-handler="selectDay" data-event="click" data-month="6" data-year="2024">
+                        <a class="ui-state-default" href="#">8</a>
+                      </td>
+                      <td class=" " data-handler="selectDay" data-event="click" data-month="6" data-year="2024">
+                        <a class="ui-state-default" href="#">9</a>
+                      </td>
+                      <td class=" " data-handler="selectDay" data-event="click" data-month="6" data-year="2024">
+                        <a class="ui-state-default" href="#">10</a>
+                      </td>
+                      <td class=" " data-handler="selectDay" data-event="click" data-month="6" data-year="2024">
+                        <a class="ui-state-default" href="#">11</a>
+                      </td>
+                      <td class=" " data-handler="selectDay" data-event="click" data-month="6" data-year="2024">
+                        <a class="ui-state-default" href="#">12</a>
+                      </td>
+                      <td class=" ui-datepicker-week-end " data-handler="selectDay" data-event="click" data-month="6" data-year="2024">
+                        <a class="ui-state-default" href="#">13</a>
+                      </td>
+                      <td class=" ui-datepicker-week-end " data-handler="selectDay" data-event="click" data-month="6" data-year="2024">
+                        <a class="ui-state-default" href="#">14</a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class=" " data-handler="selectDay" data-event="click" data-month="6" data-year="2024">
+                        <a class="ui-state-default" href="#">15</a>
+                      </td>
+                      <td class=" " data-handler="selectDay" data-event="click" data-month="6" data-year="2024">
+                        <a class="ui-state-default" href="#">16</a>
+                      </td>
+                      <td class=" " data-handler="selectDay" data-event="click" data-month="6" data-year="2024">
+                        <a class="ui-state-default" href="#">17</a>
+                      </td>
+                      <td class=" " data-handler="selectDay" data-event="click" data-month="6" data-year="2024">
+                        <a class="ui-state-default" href="#">18</a>
+                      </td>
+                      <td class=" " data-handler="selectDay" data-event="click" data-month="6" data-year="2024">
+                        <a class="ui-state-default" href="#">19</a>
+                      </td>
+                      <td class=" ui-datepicker-week-end " data-handler="selectDay" data-event="click" data-month="6" data-year="2024">
+                        <a class="ui-state-default" href="#">20</a>
+                      </td>
+                      <td class=" ui-datepicker-week-end " data-handler="selectDay" data-event="click" data-month="6" data-year="2024">
+                        <a class="ui-state-default" href="#">21</a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class=" " data-handler="selectDay" data-event="click" data-month="6" data-year="2024">
+                        <a class="ui-state-default" href="#">22</a>
+                      </td>
+                      <td class=" " data-handler="selectDay" data-event="click" data-month="6" data-year="2024">
+                        <a class="ui-state-default" href="#">23</a>
+                      </td>
+                      <td class=" " data-handler="selectDay" data-event="click" data-month="6" data-year="2024">
+                        <a class="ui-state-default" href="#">24</a>
+                      </td>
+                      <td class=" " data-handler="selectDay" data-event="click" data-month="6" data-year="2024">
+                        <a class="ui-state-default" href="#">25</a>
+                      </td>
+                      <td class=" " data-handler="selectDay" data-event="click" data-month="6" data-year="2024">
+                        <a class="ui-state-default" href="#">26</a>
+                      </td>
+                      <td class=" ui-datepicker-week-end " data-handler="selectDay" data-event="click" data-month="6" data-year="2024">
+                        <a class="ui-state-default" href="#">27</a>
+                      </td>
+                      <td class=" ui-datepicker-week-end " data-handler="selectDay" data-event="click" data-month="6" data-year="2024">
+                        <a class="ui-state-default" href="#">28</a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class=" " data-handler="selectDay" data-event="click" data-month="6" data-year="2024">
+                        <a class="ui-state-default" href="#">29</a>
+                      </td>
+                      <td class=" ui-datepicker-days-cell-over  ui-datepicker-current-day ui-datepicker-today" data-handler="selectDay" data-event="click" data-month="6" data-year="2024">
+                        <a class="ui-state-default ui-state-highlight ui-state-active" href="#">30</a>
+                      </td>
+                      <td class=" " data-handler="selectDay" data-event="click" data-month="6" data-year="2024">
+                        <a class="ui-state-default" href="#">31</a>
+                      </td>
+                      <td class=" ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled">&nbsp;
+                      </td>
+                      <td class=" ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled">&nbsp;</td>
+                      <td class=" ui-datepicker-week-end ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled">&nbsp;</td>
+                      <td class=" ui-datepicker-week-end ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled">&nbsp;</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+
+          <!-- END OF CALENDAR -->
+
+
+        </div>
+
+        <!-- History block content wrapper start -->
+
+        <div class="history-block">
+          <div class="accordion" id="accordionSkill">
+            <div class="card">
+              <div class="card-header" id="headingOneSkill">
+                <div class="mb-0">
+                  <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOneSkill" aria-expanded="true" aria-controls="collapseOneSkill">
+                    <div class="align-items-center">
+                      <span>May 8, 2023 &#149; 2:00 PM</span>
+                      <h5>UX/UI designer</h5>
+                    </div>
+                    <i class="fa-solid fa-chevron-down ml-auto align-self-center"></i>
+                  </button>
+                </div>
+              </div>
+
+              <div id="collapseOneSkill" class="collapse show" aria-labelledby="headingOneSkill" data-parent="#accordionSkill">
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col-auto">
+                      <button class="btn btn-light" style="padding: 0;">
+                        <img src="img/logo.svg" alt="" style="width: 28px;">
+                      </button>
+                    </div>
+                    <div class="col">
+                      <h5>Job Description AI</h5>
+                      <span>Certainly! As a UI/UX designer, there are several essential skills you’ll need to excel in your field. Let’s explore these skills:</span> <br>
+                      <span>1. Prototyping, Wireframing, User Flows, and Mockups:</span>
+                      <ul style="list-style: disc;">
+                        <li>Wireframes: These are web page layouts stripped of visual design, used to prioritize page elements based on user needs.</li>
+                        <li>Prototypes: Samples or simulations of final products used for testing and gathering feedback. Low-fidelity prototypes might be sketched on paper, while high-fidelity prototypes allow for mouse and keyboard interaction.</li>
+                      </ul>
+                      <button class="btn btn-light">
+                        <img src="img/copy.svg" alt="">
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingTwoSkill">
+                <div class="mb-0">
+                  <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwoSkill" aria-expanded="true" aria-controls="collapseTwoSkill">
+                    <div class="align-items-center">
+                      <span>May 8, 2023 &#149; 2:00 PM</span>
+                      <h5>Sales manager</h5>
+                    </div>
+                    <i class="fa-solid fa-chevron-down ml-auto align-self-center"></i>
+                  </button>
+                </div>
+              </div>
+
+              <div id="collapseTwoSkill" class="collapse" aria-labelledby="headingTwoSkill" data-parent="#accordionSkill">
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col-auto">
+                      <button class="btn btn-light" style="padding: 0;">
+                        <img src="img/logo.svg" alt="" style="width: 28px;">
+                      </button>
+                    </div>
+                    <div class="col">
+                      <h5>Job Description AI</h5>
+                      <span>Certainly! As a UI/UX designer, there are several essential skills you’ll need to excel in your field. Let’s explore these skills:</span> <br>
+                      <span>1. Prototyping, Wireframing, User Flows, and Mockups:</span>
+                      <ul style="list-style: disc;">
+                        <li>Wireframes: These are web page layouts stripped of visual design, used to prioritize page elements based on user needs.</li>
+                        <li>Prototypes: Samples or simulations of final products used for testing and gathering feedback. Low-fidelity prototypes might be sketched on paper, while high-fidelity prototypes allow for mouse and keyboard interaction.</li>
+                      </ul>
+                      <button class="btn btn-light">
+                        <img src="img/copy.svg" alt="">
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingThreeSkill">
+                <div class="mb-0">
+                  <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThreeSkill" aria-expanded="true" aria-controls="collapseThreeSkill">
+                    <div class="align-items-center">
+                      <span>May 8, 2023 &#149; 2:00 PM</span>
+                      <h5>Human resource specialist</h5>
+                    </div>
+                    <i class="fa-solid fa-chevron-down ml-auto align-self-center"></i>
+                  </button>
+                </div>
+              </div>
+
+              <div id="collapseThreeSkill" class="collapse" aria-labelledby="headingThreeSkill" data-parent="#accordionSkill">
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col-auto">
+                      <button class="btn btn-light" style="padding: 0;">
+                        <img src="img/logo.svg" alt="" style="width: 28px;">
+                      </button>
+                    </div>
+                    <div class="col">
+                      <h5>Job Description AI</h5>
+                      <span>Certainly! As a UI/UX designer, there are several essential skills you’ll need to excel in your field. Let’s explore these skills:</span> <br>
+                      <span>1. Prototyping, Wireframing, User Flows, and Mockups:</span>
+                      <ul style="list-style: disc;">
+                        <li>Wireframes: These are web page layouts stripped of visual design, used to prioritize page elements based on user needs.</li>
+                        <li>Prototypes: Samples or simulations of final products used for testing and gathering feedback. Low-fidelity prototypes might be sketched on paper, while high-fidelity prototypes allow for mouse and keyboard interaction.</li>
+                      </ul>
+                      <button class="btn btn-light">
+                        <img src="img/copy.svg" alt="">
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingFourSkill">
+                <div class="mb-0">
+                  <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFourSkill" aria-expanded="true" aria-controls="collapseFourSkill">
+                    <div class="align-items-center">
+                      <span>May 8, 2023 &#149; 2:00 PM</span>
+                      <h5>Head of financial affairs</h5>
+                    </div>
+                    <i class="fa-solid fa-chevron-down ml-auto align-self-center"></i>
+                  </button>
+                </div>
+              </div>
+
+              <div id="collapseFourSkill" class="collapse" aria-labelledby="headingFourSkill" data-parent="#accordionSkill">
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col-auto">
+                      <button class="btn btn-light" style="padding: 0;">
+                        <img src="img/logo.svg" alt="" style="width: 28px;">
+                      </button>
+                    </div>
+                    <div class="col">
+                      <h5>Job Description AI</h5>
+                      <span>Certainly! As a UI/UX designer, there are several essential skills you’ll need to excel in your field. Let’s explore these skills:</span> <br>
+                      <span>1. Prototyping, Wireframing, User Flows, and Mockups:</span>
+                      <ul style="list-style: disc;">
+                        <li>Wireframes: These are web page layouts stripped of visual design, used to prioritize page elements based on user needs.</li>
+                        <li>Prototypes: Samples or simulations of final products used for testing and gathering feedback. Low-fidelity prototypes might be sketched on paper, while high-fidelity prototypes allow for mouse and keyboard interaction.</li>
+                      </ul>
+                      <button class="btn btn-light">
+                        <img src="img/copy.svg" alt="">
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingFiveSkill">
+                <div class="mb-0">
+                  <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFiveSkill" aria-expanded="true" aria-controls="collapseFiveSkill">
+                    <div class="align-items-center">
+                      <span>May 8, 2023 &#149; 2:00 PM</span>
+                      <h5>Marketing manager</h5>
+                    </div>
+                    <i class="fa-solid fa-chevron-down ml-auto align-self-center"></i>
+                  </button>
+                </div>
+              </div>
+
+              <div id="collapseFiveSkill" class="collapse" aria-labelledby="headingFiveSkill" data-parent="#accordionSkill">
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col-auto">
+                      <button class="btn btn-light" style="padding: 0;">
+                        <img src="img/logo.svg" alt="" style="width: 28px;">
+                      </button>
+                    </div>
+                    <div class="col">
+                      <h5>Job Description AI</h5>
+                      <span>Certainly! As a UI/UX designer, there are several essential skills you’ll need to excel in your field. Let’s explore these skills:</span> <br>
+                      <span>1. Prototyping, Wireframing, User Flows, and Mockups:</span>
+                      <ul style="list-style: disc;">
+                        <li>Wireframes: These are web page layouts stripped of visual design, used to prioritize page elements based on user needs.</li>
+                        <li>Prototypes: Samples or simulations of final products used for testing and gathering feedback. Low-fidelity prototypes might be sketched on paper, while high-fidelity prototypes allow for mouse and keyboard interaction.</li>
+                      </ul>
+                      <button class="btn btn-light">
+                        <img src="img/copy.svg" alt="">
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- History block content wrapper end -->
+      </div>
+
+      <!-- Job skill block end -->
+
+
+      <div class="tab-pane fade" id="pills-jrespons" role="tabpanel" aria-labelledby="pills-jrespons-tab">JOB RESPONSIBILITIES</div>
+      <div class="tab-pane fade" id="pills-jqual" role="tabpanel" aria-labelledby="pills-jqual-tab">JOB QUALIFICATIONS</div>
+
+
+
+
+      <!-- Job Description block start -->
+
+
+      <div class="tab-pane fade" id="pills-jdescr" role="tabpanel" aria-labelledby="pills-jdescr-tab">
+        <div class="history-title">
+          <h3>Job Description</h3>
+          <div class="search ml-auto mr-3">
+            <input type="text" class="search-field" placeholder="Search here">
+            <img src="img/search.svg" alt="" class="search-icon">
+          </div>
+          <input class="history-callendar" type="text" name="history" value="Friday, 12/08/2023" />
+        </div>
+        <div class="history-block">
+          <div class="accordion" id="accordionDescription">
+            <div class="card">
+              <div class="card-header" id="headingOneDescr">
+                <div class="mb-0">
+                  <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOneDescr" aria-expanded="true" aria-controls="collapseOneDescr">
+                    <div class="align-items-center">
+                      <span>May 8, 2023 &#149; 2:00 PM</span>
+                      <h5>Sales manager &#149; Communication &#149; 2 - 4 years &#149; Canada, Ontario</h5>
+                    </div>
+                    <i class="fa-solid fa-chevron-down ml-auto align-self-center"></i>
+                  </button>
+                </div>
+              </div>
+
+              <div id="collapseOneDescr" class="collapse show" aria-labelledby="headingOneDescr" data-parent="#accordionDescription">
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col-auto">
+                      <button class="btn btn-light" style="padding: 0;">
+                        <img src="img/logo.svg" alt="" style="width: 28px;">
+                      </button>
+                    </div>
+                    <div class="col">
+                      <h5>Job Description AI</h5>
+                      <span>Certainly! As a UI/UX designer, there are several essential skills you’ll need to excel in your field. Let’s explore these skills:</span> <br>
+                      <span>1. Prototyping, Wireframing, User Flows, and Mockups:</span>
+                      <ul style="list-style: disc;">
+                        <li>Wireframes: These are web page layouts stripped of visual design, used to prioritize page elements based on user needs.</li>
+                        <li>Prototypes: Samples or simulations of final products used for testing and gathering feedback. Low-fidelity prototypes might be sketched on paper, while high-fidelity prototypes allow for mouse and keyboard interaction.</li>
+                      </ul>
+                      <button class="btn btn-light">
+                        <img src="img/copy.svg" alt="">
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingTwoDescr">
+                <div class="mb-0">
+                  <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwoDescr" aria-expanded="true" aria-controls="collapseTwoDescr">
+                    <div class="align-items-center">
+                      <span>May 8, 2023 &#149; 2:00 PM</span>
+                      <h5>Human resource specialist &#149; Communication &#149; 1 - 3 years &#149; Switzerland</h5>
+                    </div>
+                    <i class="fa-solid fa-chevron-down ml-auto align-self-center"></i>
+                  </button>
+                </div>
+              </div>
+
+              <div id="collapseTwoDescr" class="collapse" aria-labelledby="headingTwoDescr" data-parent="#accordionDescription">
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col-auto">
+                      <button class="btn btn-light" style="padding: 0;">
+                        <img src="img/logo.svg" alt="" style="width: 28px;">
+                      </button>
+                    </div>
+                    <div class="col">
+                      <h5>Job Description AI</h5>
+                      <span>Certainly! As a UI/UX designer, there are several essential skills you’ll need to excel in your field. Let’s explore these skills:</span> <br>
+                      <span>1. Prototyping, Wireframing, User Flows, and Mockups:</span>
+                      <ul style="list-style: disc;">
+                        <li>Wireframes: These are web page layouts stripped of visual design, used to prioritize page elements based on user needs.</li>
+                        <li>Prototypes: Samples or simulations of final products used for testing and gathering feedback. Low-fidelity prototypes might be sketched on paper, while high-fidelity prototypes allow for mouse and keyboard interaction.</li>
+                      </ul>
+                      <button class="btn btn-light">
+                        <img src="img/copy.svg" alt="">
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingThreeDescr">
+                <div class="mb-0">
+                  <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThreeDescr" aria-expanded="true" aria-controls="collapseThreeDescr">
+                    <div class="align-items-center">
+                      <span>May 8, 2023 &#149; 2:00 PM</span>
+                      <h5>Flutter developer &#149; Communication &#149; 1 - 3 years &#149; Japan</h5>
+                    </div>
+                    <i class="fa-solid fa-chevron-down ml-auto align-self-center"></i>
+                  </button>
+                </div>
+              </div>
+
+              <div id="collapseThreeDescr" class="collapse" aria-labelledby="headingThreeDescr" data-parent="#accordionDescription">
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col-auto">
+                      <button class="btn btn-light" style="padding: 0;">
+                        <img src="img/logo.svg" alt="" style="width: 28px;">
+                      </button>
+                    </div>
+                    <div class="col">
+                      <h5>Job Description AI</h5>
+                      <span>Certainly! As a UI/UX designer, there are several essential skills you’ll need to excel in your field. Let’s explore these skills:</span> <br>
+                      <span>1. Prototyping, Wireframing, User Flows, and Mockups:</span>
+                      <ul style="list-style: disc;">
+                        <li>Wireframes: These are web page layouts stripped of visual design, used to prioritize page elements based on user needs.</li>
+                        <li>Prototypes: Samples or simulations of final products used for testing and gathering feedback. Low-fidelity prototypes might be sketched on paper, while high-fidelity prototypes allow for mouse and keyboard interaction.</li>
+                      </ul>
+                      <button class="btn btn-light">
+                        <img src="img/copy.svg" alt="">
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingFourDescr">
+                <div class="mb-0">
+                  <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFourDescr" aria-expanded="true" aria-controls="collapseFourDescr">
+                    <div class="align-items-center">
+                      <span>May 8, 2023 &#149; 2:00 PM</span>
+                      <h5>Head of financial affairs &#149; Communication &#149; 1 - 3 years &#149; Australia</h5>
+                    </div>
+                    <i class="fa-solid fa-chevron-down ml-auto align-self-center"></i>
+                  </button>
+                </div>
+              </div>
+
+              <div id="collapseFourDescr" class="collapse" aria-labelledby="headingFourDescr" data-parent="#accordionDescription">
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col-auto">
+                      <button class="btn btn-light" style="padding: 0;">
+                        <img src="img/logo.svg" alt="" style="width: 28px;">
+                      </button>
+                    </div>
+                    <div class="col">
+                      <h5>Job Description AI</h5>
+                      <span>Certainly! As a UI/UX designer, there are several essential skills you’ll need to excel in your field. Let’s explore these skills:</span> <br>
+                      <span>1. Prototyping, Wireframing, User Flows, and Mockups:</span>
+                      <ul style="list-style: disc;">
+                        <li>Wireframes: These are web page layouts stripped of visual design, used to prioritize page elements based on user needs.</li>
+                        <li>Prototypes: Samples or simulations of final products used for testing and gathering feedback. Low-fidelity prototypes might be sketched on paper, while high-fidelity prototypes allow for mouse and keyboard interaction.</li>
+                      </ul>
+                      <button class="btn btn-light">
+                        <img src="img/copy.svg" alt="">
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingFiveDescr">
+                <div class="mb-0">
+                  <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFiveDescr" aria-expanded="true" aria-controls="collapseFiveDescr">
+                    <div class="align-items-center">
+                      <span>May 8, 2023 &#149; 2:00 PM</span>
+                      <h5>Marketing manager &#149; Communication &#149; 1 - 3 years &#149; USA</h5>
+                    </div>
+                    <i class="fa-solid fa-chevron-down ml-auto align-self-center"></i>
+                  </button>
+                </div>
+              </div>
+
+              <div id="collapseFiveDescr" class="collapse" aria-labelledby="headingFiveDescr" data-parent="#accordionDescription">
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col-auto">
+                      <button class="btn btn-light" style="padding: 0;">
+                        <img src="img/logo.svg" alt="" style="width: 28px;">
+                      </button>
+                    </div>
+                    <div class="col">
+                      <h5>Job Description AI</h5>
+                      <span>Certainly! As a UI/UX designer, there are several essential skills you’ll need to excel in your field. Let’s explore these skills:</span> <br>
+                      <span>1. Prototyping, Wireframing, User Flows, and Mockups:</span>
+                      <ul style="list-style: disc;">
+                        <li>Wireframes: These are web page layouts stripped of visual design, used to prioritize page elements based on user needs.</li>
+                        <li>Prototypes: Samples or simulations of final products used for testing and gathering feedback. Low-fidelity prototypes might be sketched on paper, while high-fidelity prototypes allow for mouse and keyboard interaction.</li>
+                      </ul>
+                      <button class="btn btn-light">
+                        <img src="img/copy.svg" alt="">
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Job Description block end  -->
+
+
+      <!-- Job Description Rewriter Block start -->
+
+
+      <div class="tab-pane fade" id="pills-jrewriter" role="tabpanel" aria-labelledby="pills-jrewriter-tab">
+         <div class="history-title">
+          <h3>Job Description Rewriter</h3>
+          <div class="search ml-auto mr-3">
+            <input type="text" class="search-field" placeholder="Search here">
+            <img src="img/search.svg" alt="" class="search-icon">
+          </div>
+          <input class="history-callendar" type="text" name="history" value="Friday, 12/08/2023" />
+        </div>
+        <div class="history-block">
+          <div class="accordion" id="accordionRe">
+            <div class="card">
+              <div class="card-header" id="headingOneRe">
+                <div class="mb-0">
+                  <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOneRe" aria-expanded="true" aria-controls="collapseOneRe">
+                    <div class="align-items-center">
+                      <span>May 8, 2023 &#149; 2:00 PM</span>
+                      <h5>We're in need of a talented UX/UI Designer to join our team. If you've got a knack for crafting smooth user experiences and sleek interfaces, we want to hear from you! Drop us a line with your portfolio and let's chat! <br> Are you an innovative and imaginative UX/UI Designer with a knack for transforming ideas into captivating digital experiences? Our team is on the lookout for a talented individual like you to join us in crafting sleek interfaces and seamless user journeys. If you thrive on pushing boundaries and creating designs that leave a lasting impression, we want to connect with you! Take the opportunity to showcase your creativity and expertise by sharing your diverse portfolio with us.</h5>
+                    </div>
+                    <i class="fa-solid fa-chevron-down ml-auto align-self-center"></i>
+                  </button>
+                </div>
+              </div>
+
+              <div id="collapseOneRe" class="collapse show" aria-labelledby="headingOneRe" data-parent="#accordionRe">
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col-auto">
+                      <button class="btn btn-light" style="padding: 0;">
+                        <img src="img/logo.svg" alt="" style="width: 28px;">
+                      </button>
+                    </div>
+                    <div class="col">
+                      <h5>Job Description AI</h5>
+                      <span>Certainly! As a UI/UX designer, there are several essential skills you’ll need to excel in your field. Let’s explore these skills:</span> <br>
+                      <span>1. Prototyping, Wireframing, User Flows, and Mockups:</span>
+                      <ul style="list-style: disc;">
+                        <li>Wireframes: These are web page layouts stripped of visual design, used to prioritize page elements based on user needs.</li>
+                        <li>Prototypes: Samples or simulations of final products used for testing and gathering feedback. Low-fidelity prototypes might be sketched on paper, while high-fidelity prototypes allow for mouse and keyboard interaction.</li>
+                      </ul>
+                      <button class="btn btn-light">
+                        <img src="img/copy.svg" alt="">
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingTwoRe">
+                <div class="mb-0">
+                  <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwoRe" aria-expanded="true" aria-controls="collapseTwoRe">
+                    <div class="align-items-center">
+                      <span>May 8, 2023 &#149; 2:00 PM</span>
+                      <h5>We're in need of a talented UX/UI Designer to join our team. If you've got a knack for crafting smooth...</h5>
+                    </div>
+                    <i class="fa-solid fa-chevron-down ml-auto align-self-center"></i>
+                  </button>
+                </div>
+              </div>
+
+              <div id="collapseTwoRe" class="collapse" aria-labelledby="headingTwoRe" data-parent="#accordionRe">
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col-auto">
+                      <button class="btn btn-light" style="padding: 0;">
+                        <img src="img/logo.svg" alt="" style="width: 28px;">
+                      </button>
+                    </div>
+                    <div class="col">
+                      <h5>Job Description AI</h5>
+                      <span>Certainly! As a UI/UX designer, there are several essential skills you’ll need to excel in your field. Let’s explore these skills:</span> <br>
+                      <span>1. Prototyping, Wireframing, User Flows, and Mockups:</span>
+                      <ul style="list-style: disc;">
+                        <li>Wireframes: These are web page layouts stripped of visual design, used to prioritize page elements based on user needs.</li>
+                        <li>Prototypes: Samples or simulations of final products used for testing and gathering feedback. Low-fidelity prototypes might be sketched on paper, while high-fidelity prototypes allow for mouse and keyboard interaction.</li>
+                      </ul>
+                      <button class="btn btn-light">
+                        <img src="img/copy.svg" alt="">
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingThreeRe">
+                <div class="mb-0">
+                  <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThreeRe" aria-expanded="true" aria-controls="collapseThreeRe">
+                    <div class="align-items-center">
+                      <span>May 8, 2023 &#149; 2:00 PM</span>
+                      <h5>We're in need of a talented UX/UI Designer to join our team. If you've got a knack for crafting smooth...</h5>
+                    </div>
+                    <i class="fa-solid fa-chevron-down ml-auto align-self-center"></i>
+                  </button>
+                </div>
+              </div>
+
+              <div id="collapseThreeRe" class="collapse" aria-labelledby="headingThreeRe" data-parent="#accordionRe">
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col-auto">
+                      <button class="btn btn-light" style="padding: 0;">
+                        <img src="img/logo.svg" alt="" style="width: 28px;">
+                      </button>
+                    </div>
+                    <div class="col">
+                      <h5>Job Description AI</h5>
+                      <span>Certainly! As a UI/UX designer, there are several essential skills you’ll need to excel in your field. Let’s explore these skills:</span> <br>
+                      <span>1. Prototyping, Wireframing, User Flows, and Mockups:</span>
+                      <ul style="list-style: disc;">
+                        <li>Wireframes: These are web page layouts stripped of visual design, used to prioritize page elements based on user needs.</li>
+                        <li>Prototypes: Samples or simulations of final products used for testing and gathering feedback. Low-fidelity prototypes might be sketched on paper, while high-fidelity prototypes allow for mouse and keyboard interaction.</li>
+                      </ul>
+                      <button class="btn btn-light">
+                        <img src="img/copy.svg" alt="">
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingFourRe">
+                <div class="mb-0">
+                  <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFourRe" aria-expanded="true" aria-controls="collapseFourRe">
+                    <div class="align-items-center">
+                      <span>May 8, 2023 &#149; 2:00 PM</span>
+                      <h5>Head of financial affairs</h5>
+                    </div>
+                    <i class="fa-solid fa-chevron-down ml-auto align-self-center"></i>
+                  </button>
+                </div>
+              </div>
+
+              <div id="collapseFourRe" class="collapse" aria-labelledby="headingFourRe" data-parent="#accordionExampleRe">
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col-auto">
+                      <button class="btn btn-light" style="padding: 0;">
+                        <img src="img/logo.svg" alt="" style="width: 28px;">
+                      </button>
+                    </div>
+                    <div class="col">
+                      <h5>Job Description AI</h5>
+                      <span>Certainly! As a UI/UX designer, there are several essential skills you’ll need to excel in your field. Let’s explore these skills:</span> <br>
+                      <span>1. Prototyping, Wireframing, User Flows, and Mockups:</span>
+                      <ul style="list-style: disc;">
+                        <li>Wireframes: These are web page layouts stripped of visual design, used to prioritize page elements based on user needs.</li>
+                        <li>Prototypes: Samples or simulations of final products used for testing and gathering feedback. Low-fidelity prototypes might be sketched on paper, while high-fidelity prototypes allow for mouse and keyboard interaction.</li>
+                      </ul>
+                      <button class="btn btn-light">
+                        <img src="img/copy.svg" alt="">
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingFiveRe">
+                <div class="mb-0">
+                  <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFiveRe" aria-expanded="true" aria-controls="collapseFiveRe">
+                    <div class="align-items-center">
+                      <span>May 8, 2023 &#149; 2:00 PM</span>
+                      <h5>Marketing manager</h5>
+                    </div>
+                    <i class="fa-solid fa-chevron-down ml-auto align-self-center"></i>
+                  </button>
+                </div>
+              </div>
+
+              <div id="collapseFiveRe" class="collapse" aria-labelledby="headingFiveRe" data-parent="#accordionExampleRe">
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col-auto">
+                      <button class="btn btn-light" style="padding: 0;">
+                        <img src="img/logo.svg" alt="" style="width: 28px;">
+                      </button>
+                    </div>
+                    <div class="col">
+                      <h5>Job Description AI</h5>
+                      <span>Certainly! As a UI/UX designer, there are several essential skills you’ll need to excel in your field. Let’s explore these skills:</span> <br>
+                      <span>1. Prototyping, Wireframing, User Flows, and Mockups:</span>
+                      <ul style="list-style: disc;">
+                        <li>Wireframes: These are web page layouts stripped of visual design, used to prioritize page elements based on user needs.</li>
+                        <li>Prototypes: Samples or simulations of final products used for testing and gathering feedback. Low-fidelity prototypes might be sketched on paper, while high-fidelity prototypes allow for mouse and keyboard interaction.</li>
+                      </ul>
+                      <button class="btn btn-light">
+                        <img src="img/copy.svg" alt="">
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Job Description Rewriter Block end -->
+
+    </div>
+  </div>
+
+  <!-- all content block end -->
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js" integrity="sha512-p7Ey2nBhKYEi9yh0iDs+GMA0ttebOqVl3OO2oWRzRxtDoN/RedyYcHFUJZhMVi8NKRdEA7n+9NTNQX/kFIZgNw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+  <script src="/path/to/cdn/jquery.slim.min.js"></script>
+  <script src="/path/to/evk_calendar_jk.js"></script>
+  <script src="js/common.js"></script>
+
+</body>
+</html>

@@ -5,6 +5,9 @@ $(function() {
 //       allowClear: true
 //     });
 
+$(function() {
+  $( "#datepicker" ).datepicker({ firstDay: 1});
+});
 
 // Password-hide
 
@@ -30,12 +33,20 @@ $(".toggle-password").click(function() {
     $('.review').addClass('d-block');
   });
 
+  $('.history-calendar').click(function(){
+    $('.calendar').toggleClass('active');
+  });
+
   $('.like-btn').click(function(){
     $(this).toggleClass('active');
   });
   $('.dislike-btn').click(function(){
     $(this).toggleClass('active');
   });
+
+
+// generating process
+
 
   $('.btn-loading').click(function(){
     $('.generate-text-area').addClass('d-none');
@@ -139,4 +150,17 @@ button.addEventListener('click', () => {
 })
 
 
+function myFunction() {
+  // Get the text field
+  var copyText = document.getElementById("exampleFormControlTextarea2");
 
+  // Select the text field
+  copyText.select();
+  copyText.setSelectionRange(0, 99999); // For mobile devices
+
+   // Copy the text inside the text field
+  navigator.clipboard.writeText(copyText.value);
+
+  // Alert the copied text
+  alert("Copied the text: " + copyText.value);
+}
